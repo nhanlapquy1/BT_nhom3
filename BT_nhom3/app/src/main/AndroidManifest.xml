@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.circleview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="VoLap.example.appLoship.NullActivity"/>
+        <activity android:name="VoLap.example.appLoship.HistoryActivity_a" />
+        <activity android:name="VoLap.example.appLoship.SettingsActivity_a" />
+        <activity android:name="VoLap.example.appLoship.GameHomeActivity_a"/>
+        <activity android:name="VoLap.example.appLoship.SignupActivity" />
+
+        <activity android:name="VoLap.example.appLoship.DangXuat" />
+        <activity android:name="VoLap.example.appLoship.GiamGia" />
+        <activity android:name="VoLap.example.appLoship.DoAnActivity" />
+        <activity android:name="VoLap.example.appLoship.MenuMonAn" />
+        <activity android:name="VoLap.example.appLoship.List_GiaoDoAn" />
+        <activity android:name="VoLap.example.appLoship.ProfileUserActivity" />
+        <activity android:name="VoLap.example.appLoship.ThongBaoActivity" />
+        <activity android:name="VoLap.example.appLoship.LoginActivity" />
+        <activity android:name="VoLap.example.appLoship.GiaoDoAn_activity" />
+        <activity android:name="VoLap.example.appLoship.User1Activity" />
+        <activity android:name="VoLap.example.appLoship.Home_Activity"/>
+        <activity android:name="VoLap.example.appLoship.Loading_activity"/>
+
+        <activity android:name="VoLap.example.appLoship.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

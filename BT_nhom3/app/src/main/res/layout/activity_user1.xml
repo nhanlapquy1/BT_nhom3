@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="VoLap.example.appLoship.User1Activity">
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Thông tin tài khoản"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <EditText
+
+            android:id="@+id/infoTxtCredits"
+            android:layout_width="413dp"
+            android:layout_height="19dp"
+
+            android:layout_gravity="center"
+            android:autoLink="web"
+            android:linksClickable="true" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle"
+            android:padding="2dp"
+            android:src="@drawable/ic_account" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Tên đầy đủ của bạn"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:hint="USER NAME" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:text="(*) Thông tin không bỏ trống"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/head"
+        android:id="@+id/content1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/border_setting"
+        android:elevation="2px"
+        android:padding="10dp">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mẹo: Liên kết tài khoản Facebook để đăng nhập nhanh hơn."
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+
+        <Button
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:drawableStart="@drawable/ic_facebook_link"
+            android:background="@color/colorWhite"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text=" LIÊN KẾT TÀI KHOẢN FACEBOOK"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="342dp"
+            android:layout_height="103dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_StartHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_bg"
+            android:text="Bắt đầu khám phá Loship ngay"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
