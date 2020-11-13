@@ -90,7 +90,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="18dp"
             android:drawableStart="@drawable/ic_facebook_link"
-            android:background="@color/colorWhite"
+            android:background="@color/cardview_light_background"
             android:fontFamily="sans-serif-light"
             android:gravity="center"
             android:text=" LIÊN KẾT TÀI KHOẢN FACEBOOK"

@@ -14,7 +14,7 @@ public class User1Activity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user1);
+        setContentView(R.layout.activity_user);
         btStartHome=(Button)findViewById(R.id.bt_StartHome);
         btStartHome.setOnClickListener(new View.OnClickListener() {
             @Override

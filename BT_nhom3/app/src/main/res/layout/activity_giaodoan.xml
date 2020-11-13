@@ -101,79 +101,81 @@
             </LinearLayout>
 
             <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="138dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/hot"
-            android:orientation="horizontal">
-            <ViewFlipper
-            android:id="@+id/viewFlipper"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp">
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_margin="5dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/nhan_hang1"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                />
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_margin="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/nhan_hang2"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                />
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_margin="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/nhan_hang3"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                />
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_margin="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/nhan_hang4"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                />
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_margin="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/nhan_hang5"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                />
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_margin="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/nhan_hang6"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                />
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hot"
+                android:orientation="horizontal">
+
+                <ViewFlipper
+                    android:id="@+id/viewFlipper2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_margin="2dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="372dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/nhan_hang1"
+                        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/nhan_hang2"
+                        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/nhan_hang3"
+                        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/nhan_hang4"
+                        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/nhan_hang5"
+                        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/nhan_hang6"
+                        app:shapeAppearanceOverlay="@style/roundimageview" />
 
 
-        </ViewFlipper>
+                </ViewFlipper>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -184,18 +186,12 @@
                     android:background="@color/cardview_light_background"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@android:color/tab_indicator_text"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+
                 <Button
                     android:id="@+id/btn_menu_ALL"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:layout_marginLeft="90dp"
                     android:textColor="@android:color/holo_blue_dark"
                     android:background="@color/cardview_light_background"
                     android:text="Xem tất cả (+15)"/>
@@ -209,8 +205,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-
-                    android:background="@drawable/hot"
+                    android:background="@color/colorWhite"
                     android:elevation="10dp"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -223,12 +218,12 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="10dp"
                             android:gravity="center">
 
                             <LinearLayout
+                                android:id="@+id/banh_mi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -241,7 +236,6 @@
                                     android:layout_height="120dp"
                                     android:layout_gravity="center"
                                     android:src="@drawable/cttl_1" />
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -369,7 +363,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -380,18 +375,12 @@
                     android:background="@color/cardview_light_background"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@android:color/tab_indicator_text"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+
                 <Button
                     android:id="@+id/btn_cua_hang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                  android:layout_marginLeft="90dp"
                     android:textColor="@android:color/holo_blue_dark"
                     android:background="@color/cardview_light_background"
                     android:text="Xem tất cả (+15)"/>
@@ -484,31 +473,25 @@
                             android:layout_marginLeft="10dp"
                             android:background="@drawable/botron3"
                             android:orientation="vertical">
-
-
                             <com.google.android.material.imageview.ShapeableImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="98dp"
-
                                 android:adjustViewBounds="true"
                                 android:scaleType="fitCenter"
                                 android:src="@drawable/chgb_2"
                                 app:shapeAppearanceOverlay="@style/roundimageview" />
-
                             <LinearLayout
                                 android:layout_width="160dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="5dp"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Bình mì Bình Minh"
                                     android:textColor="#000"
                                     android:textStyle="bold" />
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -516,26 +499,21 @@
                                     android:text="0.1 km"
                                     android:textColor="#000"
                                     android:textSize="15sp" />
-
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp">
-
                                     <ImageView
                                         android:layout_width="17dp"
                                         android:layout_height="match_parent"
                                         android:layout_gravity="center"
                                         android:src="@drawable/ic_khuyenmai" />
-
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text=" Freeship"
                                         android:textColor="#000"
                                         android:textSize="15sp" />
-
-
                                 </LinearLayout>
 
 
@@ -755,18 +733,11 @@
                     android:textColor="@android:color/secondary_text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@android:color/tab_indicator_text"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
                 <Button
                     android:id="@+id/Bt_ViewALL3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:layout_marginLeft="90dp"
                     android:textColor="@android:color/holo_blue_dark"
                     android:background="@color/cardview_light_background"
                     android:text="Xem tất cả (+15)"/>
@@ -1121,7 +1092,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1132,18 +1104,12 @@
                     android:background="@color/cardview_light_background"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@android:color/tab_indicator_text"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+
                 <Button
                     android:id="@+id/Bt_ViewALL4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:layout_marginLeft="90dp"
                     android:textColor="@android:color/holo_blue_dark"
                     android:background="@color/cardview_light_background"
                     android:text="Xem tất cả (+15)"/>

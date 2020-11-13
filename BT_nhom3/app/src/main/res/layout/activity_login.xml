@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="370dp"
-        android:layout_height="591dp"
+        android:layout_height="656dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:orientation="vertical">
@@ -53,19 +53,21 @@
             android:layout_height="wrap_content">
 
 
-            <EditText
-                android:id="@+id/edtuser2"
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:layout_row="0"
-                android:layout_column="0"
+                android:layout_centerVertical="true"
                 android:background="@drawable/round_border"
-                android:drawableStart="@drawable/ic_laco"
-                android:drawablePadding="16dp"
-                android:hint="+84"
-                android:inputType="text"
-                android:padding="16dp"
-                android:textStyle="bold" />
+                app:ccpDialog_textColor="#C1BEBE"
+                app:ccp_defaultLanguage="VIETNAMESE"
+                app:ccp_defaultNameCode="VN"
+                app:ccp_defaultPhoneCode="84"
+                app:ccp_showNameCode="false"
+                android:gravity="center"
+                app:ccp_textSize="20dp"
+                android:textStyle="bold"/>
+
 
             <EditText
                 android:id="@+id/edtuser"
@@ -107,8 +109,8 @@
             android:gravity="center"
             android:text="Hoặc"
             android:textColor="@android:color/darker_gray"
-            android:textSize="15sp"
-             />
+            android:textSize="15sp" />
+
         <EditText
 
             android:id="@+id/infoTxtCredits"
@@ -118,14 +120,15 @@
             android:layout_gravity="center"
             android:autoLink="web"
             android:linksClickable="true" />
+
         <Button
             android:id="@+id/bt_facebook"
             android:layout_width="319dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="18dp"
+            android:background="@color/cardview_light_background"
             android:drawableStart="@drawable/ic_facebook_link"
-            android:background="#EFECEC"
             android:fontFamily="sans-serif-light"
             android:gravity="center"
             android:text="Đăng nhập với FACEBOOK"
@@ -144,6 +147,11 @@
             android:textColor="@color/colorBlue"
             android:textSize="15sp"
             android:textStyle="italic" />
+
+
+
+
+
 
     </LinearLayout>
 

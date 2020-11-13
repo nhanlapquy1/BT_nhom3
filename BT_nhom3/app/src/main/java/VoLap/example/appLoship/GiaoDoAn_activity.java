@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.circleview.R;
 
 public class  GiaoDoAn_activity extends AppCompatActivity {
-    ViewFlipper viewFlipper;
+    ViewFlipper viewFlipper2;
 ImageView img_giamgia,img_backhome;
 Button bt_menu_all, bt_cuaHang;
     @Override
@@ -20,9 +20,9 @@ Button bt_menu_all, bt_cuaHang;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_giaodoan);
 
-        viewFlipper = (ViewFlipper) findViewById(R.id.viewFlipper);
-        viewFlipper.setFlipInterval(2000);
-        viewFlipper.setAutoStart(true);
+        viewFlipper2 = (ViewFlipper) findViewById(R.id.viewFlipper2);
+        viewFlipper2.setFlipInterval(2000);
+        viewFlipper2.setAutoStart(true);
 
         img_giamgia = (ImageView)findViewById(R.id.btn_GiamGia);
         img_giamgia.setOnClickListener(new View.OnClickListener() {
