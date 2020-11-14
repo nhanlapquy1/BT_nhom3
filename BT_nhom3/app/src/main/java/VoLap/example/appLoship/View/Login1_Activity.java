@@ -1,4 +1,5 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,22 +9,26 @@ import android.widget.Button;
 
 import com.example.circleview.R;
 
-public class User1Activity extends AppCompatActivity{
 
-    Button btStartHome;
+public class Login1_Activity extends AppCompatActivity {
+    Button btcontinued;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user);
+        setContentView(R.layout.activity_login_1);
 
         overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
-        btStartHome=(Button)findViewById(R.id.bt_StartHome);
-        btStartHome.setOnClickListener(new View.OnClickListener() {
+        btcontinued=(Button)findViewById(R.id.bt_continued);
+        btcontinued.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Dis2=new Intent(User1Activity.this,Home_Activity.class);
+                Intent Dis2=new Intent(Login1_Activity.this, Login2_Activity.class);
                 startActivity(Dis2);
             }
         });
     }
+
+
 }
+

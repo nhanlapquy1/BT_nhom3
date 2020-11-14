@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.View;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +17,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import VoLap.example.appLoship.Adapter.HinhAnhHome;
+import VoLap.example.appLoship.Adapter.HinhAnhHomeAdapter;
 
 public class  Home_Activity extends AppCompatActivity {
     ViewFlipper viewFlipper1;
@@ -72,6 +75,7 @@ public class  Home_Activity extends AppCompatActivity {
         });
 
         overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
+
         List<HinhAnhHome> image_details = AnhXa();
         final GridView gridView = (GridView) findViewById(R.id.gridviewHinhAnh);
         gridView.setAdapter(new HinhAnhHomeAdapter(this, image_details));
@@ -87,8 +91,6 @@ public class  Home_Activity extends AppCompatActivity {
         });
 
     }
-
-
 
     public List<HinhAnhHome> AnhXa(){
         List<HinhAnhHome> arrayImage = new ArrayList<>();

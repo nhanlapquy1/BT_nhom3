@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorWhite"
-    tools:context="VoLap.example.appLoship.SignupActivity">
+    tools:context="VoLap.example.appLoship.Model.SignupActivity">
 <!---->
     <LinearLayout
         android:layout_width="match_parent"

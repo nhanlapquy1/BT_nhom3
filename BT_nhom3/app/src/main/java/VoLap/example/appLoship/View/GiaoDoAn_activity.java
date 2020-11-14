@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.View;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -57,7 +57,7 @@ public class  GiaoDoAn_activity extends AppCompatActivity {
         bt_cuaHang2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Dis2=new Intent(GiaoDoAn_activity.this,List_MonAn.class);
+                Intent Dis2=new Intent(GiaoDoAn_activity.this, List_MonAn.class);
                 startActivity(Dis2);
             }
         });

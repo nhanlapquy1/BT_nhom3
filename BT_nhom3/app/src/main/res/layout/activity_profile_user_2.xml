@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:background="#F2F2F2"
     android:orientation="horizontal"
-    tools:context="VoLap.example.appLoship.ProfileUserActivity">
+    tools:context="VoLap.example.appLoship.View.ProfileUserActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,12 +29,13 @@
             android:textColor="#000"
             android:text="Tài khoản Loship"
             android:layout_gravity="center" />
+
         <ImageView
-            android:id="@+id/img_thongbao_user"
+            android:id="@+id/img_thongbao2"
             android:layout_width="25dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="100dp"
             android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
             android:src="@drawable/ic_group_menu" />
     </LinearLayout>
 
@@ -146,7 +147,7 @@
                     android:layout_marginLeft="10dp"
                     />
                 <ImageView
-                    android:id="@+id/next3"
+                    android:id="@+id/next2"
                     android:layout_width="8dp"
                     android:layout_height="20dp"
                     android:src="@drawable/muiten"
@@ -327,13 +328,12 @@
                     android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:text=""
                     android:textColor="#000"
                     android:textSize="18dp" />
 
                 <ImageView
-                    android:layout_width="8dp"
-                    android:layout_height="20dp"
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
                     android:layout_marginLeft="80dp"
                     android:layout_marginTop="20dp"
                     />

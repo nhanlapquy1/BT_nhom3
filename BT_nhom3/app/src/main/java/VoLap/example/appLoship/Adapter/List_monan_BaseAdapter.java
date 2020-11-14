@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.Adapter;
 
 import android.view.View;
 import android.view.ViewGroup;

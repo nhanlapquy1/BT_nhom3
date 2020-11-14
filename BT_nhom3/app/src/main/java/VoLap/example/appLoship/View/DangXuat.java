@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.View;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.circleview.R;
 
 public class DangXuat extends AppCompatActivity {
-    ImageView img_thongbao3;
+    ImageView img_thongbao3,img_dangNhap;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -23,6 +23,15 @@ public class DangXuat extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent intent = new Intent(DangXuat.this, ThongBaoActivity.class);
                     startActivity(intent);
+                }
+            });
+
+            img_dangNhap= (ImageView)findViewById(R.id.img_go_Login);
+            img_dangNhap.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent2 = new Intent(DangXuat.this, Login1_Activity.class);
+                    startActivity(intent2);
                 }
             });
         }

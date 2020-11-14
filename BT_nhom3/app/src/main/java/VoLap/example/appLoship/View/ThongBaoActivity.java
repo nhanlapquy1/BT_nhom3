@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.View;
 
 
 import android.content.Context;
@@ -39,7 +39,7 @@ public class ThongBaoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thongbao_2);
 
-
+        overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
 
         img_thongbao1 = (ImageView)findViewById(R.id.img_thongbao);
         img_thongbao1.setOnClickListener(new View.OnClickListener() {

@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.View;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btnext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Dis2=new Intent(MainActivity.this,LoginActivity.class);
+                Intent Dis2=new Intent(MainActivity.this, Login1_Activity.class);
                 startActivity(Dis2);
             }
         });

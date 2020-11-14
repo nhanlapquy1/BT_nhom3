@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.Model;
 
 import androidx.appcompat.app.AppCompatActivity;
 

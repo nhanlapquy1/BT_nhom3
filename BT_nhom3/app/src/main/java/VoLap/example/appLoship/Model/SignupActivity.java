@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.Model;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.circleview.R;
+
+import VoLap.example.appLoship.View.Login1_Activity;
 
 public class SignupActivity extends AppCompatActivity {
 
@@ -21,7 +23,7 @@ public class SignupActivity extends AppCompatActivity {
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
+                Intent intent = new Intent(SignupActivity.this, Login1_Activity.class);
                 startActivity(intent);
             }
         });

@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.Model;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.circleview.R;
+
+import VoLap.example.appLoship.View.MainActivity;
+
 public class Loading_activity extends AppCompatActivity {
 
 

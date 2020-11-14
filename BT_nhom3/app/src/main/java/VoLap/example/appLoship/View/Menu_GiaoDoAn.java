@@ -1,8 +1,9 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.View;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
 
@@ -11,6 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.circleview.R;
 
 import java.util.ArrayList;
+
+import VoLap.example.appLoship.Adapter.GridViewBaseAdapter_a;
+import VoLap.example.appLoship.Adapter.GridViewBean_a;
 
 public class Menu_GiaoDoAn extends AppCompatActivity {
 ImageView img_back_giaodoan;
@@ -28,7 +32,7 @@ ImageView img_back_giaodoan;
         img_back_giaodoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu_GiaoDoAn.this,GiaoDoAn_activity.class);
+                Intent intent = new Intent(Menu_GiaoDoAn.this, GiaoDoAn_activity.class);
                 startActivity(intent);
             }
         });
@@ -37,6 +41,16 @@ ImageView img_back_giaodoan;
         Anhxa();
         adapter = new GridViewBaseAdapter_a(this,R.layout.activity_sup_menu_giaodoan_4,arrayList);
         gridHinhAnh.setAdapter(adapter);
+        gridHinhAnh.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Object o = gridHinhAnh.getItemAtPosition(position);
+                if(o == gridHinhAnh.getItemAtPosition(0)){
+                    Intent intent = new Intent(Menu_GiaoDoAn.this, DoAn_BanhMi_Activity.class);
+                    startActivity(intent);
+                }
+            }
+        });
 
     }
     private void Anhxa(){

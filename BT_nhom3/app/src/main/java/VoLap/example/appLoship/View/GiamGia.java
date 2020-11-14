@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.View;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,13 +6,15 @@ import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
-import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.circleview.R;
 
 import java.util.ArrayList;
+
+import VoLap.example.appLoship.Adapter.List_monan_Adapter;
+import VoLap.example.appLoship.Adapter.List_monan_BaseAdapter;
 
 public class  GiamGia extends AppCompatActivity {
 

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="VoLap.example.appLoship.Loading_activity">
+    tools:context="VoLap.example.appLoship.Model.Loading_activity">
 
 
     <ProgressBar

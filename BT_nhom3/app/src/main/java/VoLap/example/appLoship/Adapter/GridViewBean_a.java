@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.Adapter;
 
 public class GridViewBean_a {
     private  int hinhanh;

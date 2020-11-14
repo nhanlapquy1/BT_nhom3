@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="VoLap.example.appLoship.Menu_GiaoDoAn">
+    tools:context="VoLap.example.appLoship.View.Menu_GiaoDoAn">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

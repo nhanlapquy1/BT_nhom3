@@ -1,4 +1,4 @@
-package VoLap.example.appLoship;
+package VoLap.example.appLoship.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
