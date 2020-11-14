@@ -10,16 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="VoLap.example.appLoship.NullActivity"/>
-        <activity android:name="VoLap.example.appLoship.HistoryActivity_a" />
-        <activity android:name="VoLap.example.appLoship.SettingsActivity_a" />
-        <activity android:name="VoLap.example.appLoship.GameHomeActivity_a"/>
         <activity android:name="VoLap.example.appLoship.SignupActivity" />
 
         <activity android:name="VoLap.example.appLoship.DangXuat" />
         <activity android:name="VoLap.example.appLoship.GiamGia" />
         <activity android:name="VoLap.example.appLoship.DoAnActivity" />
-        <activity android:name="VoLap.example.appLoship.MenuMonAn" />
-        <activity android:name="VoLap.example.appLoship.List_GiaoDoAn" />
+        <activity android:name="VoLap.example.appLoship.List_MonAn" />
+        <activity android:name="VoLap.example.appLoship.Menu_GiaoDoAn" />
         <activity android:name="VoLap.example.appLoship.ProfileUserActivity" />
         <activity android:name="VoLap.example.appLoship.ThongBaoActivity" />
         <activity android:name="VoLap.example.appLoship.LoginActivity" />

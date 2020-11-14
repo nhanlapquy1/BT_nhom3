@@ -16,7 +16,9 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login_1);
+
+        overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
         btcontinued=(Button)findViewById(R.id.bt_continued);
         btcontinued.setOnClickListener(new View.OnClickListener() {
             @Override

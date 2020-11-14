@@ -15,7 +15,7 @@ public class SignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_signup_1);
 
         arrow = (ImageView)findViewById(R.id.arrow);
         arrow.setOnClickListener(new View.OnClickListener() {

@@ -377,7 +377,7 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/btn_cua_hang"
+                    android:id="@+id/btn_cua_hang2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                   android:layout_marginLeft="90dp"
@@ -734,7 +734,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
                 <Button
-                    android:id="@+id/Bt_ViewALL3"
+                    android:id="@+id/btn_cua_hang3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="90dp"
@@ -1451,8 +1451,6 @@
 
 
                                 </LinearLayout>
-
-
                             </LinearLayout>
                         </LinearLayout>
 

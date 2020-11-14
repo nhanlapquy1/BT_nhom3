@@ -13,17 +13,18 @@ import com.example.circleview.R;
 
 public class  GiaoDoAn_activity extends AppCompatActivity {
     ViewFlipper viewFlipper2;
-ImageView img_giamgia,img_backhome;
-Button bt_menu_all, bt_cuaHang;
+    ImageView img_giamgia,img_backhome;
+    Button bt_menu_all2, bt_cuaHang2,bt_cuaHang3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_giaodoan);
+        setContentView(R.layout.activity_giaodoan_3);
 
         viewFlipper2 = (ViewFlipper) findViewById(R.id.viewFlipper2);
         viewFlipper2.setFlipInterval(2000);
         viewFlipper2.setAutoStart(true);
 
+        overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
         img_giamgia = (ImageView)findViewById(R.id.btn_GiamGia);
         img_giamgia.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,20 +44,29 @@ Button bt_menu_all, bt_cuaHang;
         });
 
 
-        bt_menu_all=(Button)findViewById(R.id.btn_menu_ALL);
-        bt_menu_all.setOnClickListener(new View.OnClickListener() {
+        bt_menu_all2=(Button)findViewById(R.id.btn_menu_ALL);
+        bt_menu_all2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Dis2=new Intent(GiaoDoAn_activity.this,List_GiaoDoAn.class);
+                Intent Dis2=new Intent(GiaoDoAn_activity.this, Menu_GiaoDoAn.class);
                 startActivity(Dis2);
             }
         });
 
-        bt_cuaHang=(Button)findViewById(R.id.btn_cua_hang);
-        bt_cuaHang.setOnClickListener(new View.OnClickListener() {
+        bt_cuaHang2=(Button)findViewById(R.id.btn_cua_hang2);
+        bt_cuaHang2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Dis2=new Intent(GiaoDoAn_activity.this,MenuMonAn.class);
+                Intent Dis2=new Intent(GiaoDoAn_activity.this,List_MonAn.class);
+                startActivity(Dis2);
+            }
+        });
+
+        bt_cuaHang3=(Button)findViewById(R.id.btn_cua_hang3);
+        bt_cuaHang3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Dis2=new Intent(GiaoDoAn_activity.this,GiamGia.class);
                 startActivity(Dis2);
             }
         });

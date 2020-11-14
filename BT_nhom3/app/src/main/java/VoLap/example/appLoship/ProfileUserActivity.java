@@ -17,7 +17,7 @@ public class ProfileUserActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_user);
+        setContentView(R.layout.activity_profile_user_2);
 
 
         img_profile = (ImageView)findViewById(R.id.img_thongbao_user);
@@ -29,19 +29,14 @@ public class ProfileUserActivity extends AppCompatActivity {
             }
         });
 
-
         nexta= (ImageView)findViewById(R.id.next3);
         nexta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent3 = new Intent(ProfileUserActivity.this, DangXuat.class);
                 startActivity(intent3);
-
-
             }
         });
-
-
 
         BottomNavigationView btnview;
         btnview = (BottomNavigationView) findViewById(R.id.bottom_ProFile);

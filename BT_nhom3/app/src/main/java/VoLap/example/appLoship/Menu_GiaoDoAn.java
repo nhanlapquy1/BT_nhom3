@@ -12,7 +12,7 @@ import com.example.circleview.R;
 
 import java.util.ArrayList;
 
-public class List_GiaoDoAn extends AppCompatActivity {
+public class Menu_GiaoDoAn extends AppCompatActivity {
 ImageView img_back_giaodoan;
     GridView gridHinhAnh;
     ArrayList<GridViewBean_a> arrayList;
@@ -20,29 +20,31 @@ ImageView img_back_giaodoan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_giao_do_an);
+        setContentView(R.layout.activity_menu_giao_do_an_4);
 
-        Anhxa();
-
-        adapter = new GridViewBaseAdapter_a(this,R.layout.activity_picture,arrayList);
-        gridHinhAnh.setAdapter(adapter);
+        overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
 
         img_back_giaodoan = (ImageView)findViewById(R.id.btn_back_giaodoan);
         img_back_giaodoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(List_GiaoDoAn.this,GiaoDoAn_activity.class);
+                Intent intent = new Intent(Menu_GiaoDoAn.this,GiaoDoAn_activity.class);
                 startActivity(intent);
             }
         });
+
+
+        Anhxa();
+        adapter = new GridViewBaseAdapter_a(this,R.layout.activity_sup_menu_giaodoan_4,arrayList);
+        gridHinhAnh.setAdapter(adapter);
 
     }
     private void Anhxa(){
         gridHinhAnh = (GridView)findViewById(R.id.gridviewServices);
         arrayList = new ArrayList<>();
+        arrayList.add(new GridViewBean_a("Bánh mỳ",R.drawable.monan_banhmy));
         arrayList.add(new GridViewBean_a("Bánh canh ghẹ",R.drawable.monan_banhcanhghe));
         arrayList.add(new GridViewBean_a("Bánh canh giò",R.drawable.monan_banhcanhgio));
-        arrayList.add(new GridViewBean_a("Bánh mỳ",R.drawable.monan_banhmy));
         arrayList.add(new GridViewBean_a("Bánh tráng",R.drawable.monan_banhtrang));
         arrayList.add(new GridViewBean_a("Bánh cuộn",R.drawable.monan_banhtrangcuon));
         arrayList.add(new GridViewBean_a("Cá viên chiên",R.drawable.monan_cavienchien));

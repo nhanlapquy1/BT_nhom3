@@ -37,7 +37,9 @@ public class ThongBaoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_thongbao);
+        setContentView(R.layout.activity_thongbao_2);
+
+
 
         img_thongbao1 = (ImageView)findViewById(R.id.img_thongbao);
         img_thongbao1.setOnClickListener(new View.OnClickListener() {
@@ -117,18 +119,17 @@ public class ThongBaoActivity extends AppCompatActivity {
         int rImgs[];
 
         MyAdapter(Context c, String title[], String description[], int imgs[]) {
-            super(c, R.layout.activity_row_thongbao, R.id.textView1, title);
+            super(c, R.layout.activity_sup_thongbao, R.id.textView1, title);
             this.context = c;
             this.rTitle = title;
             this.rDescription = description;
             this.rImgs = imgs;
-
         }
 
         @Override
         public View getView(int position,  View convertView, ViewGroup parent) {
             LayoutInflater layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View row = layoutInflater.inflate(R.layout.activity_row_thongbao, parent, false);
+            View row = layoutInflater.inflate(R.layout.activity_sup_thongbao, parent, false);
             ImageView images = row.findViewById(R.id.image);
             TextView myTitle = row.findViewById(R.id.textView1);
             TextView myDescription = row.findViewById(R.id.textView2);

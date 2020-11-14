@@ -41,7 +41,7 @@ public class HinhAnhHomeAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.activity_hinhanhhome, null);
+            convertView = layoutInflater.inflate(R.layout.activity_sup_home, null);
             holder = new ViewHolder();
             holder.image = (ImageView) convertView.findViewById(R.id.imageviewHinhAnh);
             holder.text = (TextView) convertView.findViewById(R.id.textViewHinhAnh);

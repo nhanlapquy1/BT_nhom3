@@ -20,17 +20,34 @@ import java.util.List;
 
 public class  Home_Activity extends AppCompatActivity {
     ViewFlipper viewFlipper1;
-    Button bt_GiaoDoAn,bt_List_GiaoDoAn,bt_MenuMonAn;
+    Button bt_menu_all2, bt_cuaHang2;
     GridView gvHinhAnh;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_home_2);
 
         viewFlipper1 = (ViewFlipper) findViewById(R.id.viewFlipper1);
         viewFlipper1.setFlipInterval(2000);
         viewFlipper1.setAutoStart(true);
 
+        bt_menu_all2=(Button)findViewById(R.id.btn_menu_ALL);
+        bt_menu_all2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Dis2=new Intent(Home_Activity.this, Menu_GiaoDoAn.class);
+                startActivity(Dis2);
+            }
+        });
+
+        bt_cuaHang2=(Button)findViewById(R.id.btn_cua_hang);
+        bt_cuaHang2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Dis2=new Intent(Home_Activity.this, List_MonAn.class);
+                startActivity(Dis2);
+            }
+        });
 
         BottomNavigationView btnview;
         btnview = (BottomNavigationView) findViewById(R.id.bottom_navigation);
@@ -54,6 +71,7 @@ public class  Home_Activity extends AppCompatActivity {
             }
         });
 
+        overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
         List<HinhAnhHome> image_details = AnhXa();
         final GridView gridView = (GridView) findViewById(R.id.gridviewHinhAnh);
         gridView.setAdapter(new HinhAnhHomeAdapter(this, image_details));
@@ -67,6 +85,7 @@ public class  Home_Activity extends AppCompatActivity {
                 }
             }
         });
+
     }
 
 

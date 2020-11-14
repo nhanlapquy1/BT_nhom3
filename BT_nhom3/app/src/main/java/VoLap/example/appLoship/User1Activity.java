@@ -15,6 +15,8 @@ public class User1Activity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
+
+        overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
         btStartHome=(Button)findViewById(R.id.bt_StartHome);
         btStartHome.setOnClickListener(new View.OnClickListener() {
             @Override

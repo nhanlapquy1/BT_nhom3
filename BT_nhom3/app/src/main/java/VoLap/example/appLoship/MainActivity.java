@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }, SPLASH_SCREEN);
 
+        overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
         btnext=(Button)findViewById(R.id.bt_next);
         btnext.setOnClickListener(new View.OnClickListener() {
             @Override

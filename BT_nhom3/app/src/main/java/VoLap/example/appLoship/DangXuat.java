@@ -16,20 +16,13 @@ public class DangXuat extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_dang_xuat);
 
+            overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
             img_thongbao3= (ImageView)findViewById(R.id.btn_thongbao_dang_xuat);
             img_thongbao3.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(DangXuat.this, ThongBaoActivity.class);
                     startActivity(intent);
-                }
-            });
-
-            img_thongbao3.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent2 = new Intent(DangXuat.this, ProfileUserActivity.class);
-                    startActivity(intent2);
                 }
             });
         }

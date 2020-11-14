@@ -13,7 +13,7 @@ public class DoAnActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doan_banhmi);
 
-
+        overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
 
     }
 }
