@@ -12,7 +12,7 @@ import com.example.circleview.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ProfileUserActivity extends AppCompatActivity {
-    ImageView img_profile2, nexta;
+    ImageView img_profile2, nexta, img_goto_QLHS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,20 +20,31 @@ public class ProfileUserActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile_user_2);
 
         overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
-        img_profile2 = (ImageView)findViewById(R.id.img_thongbao2);
+
+        img_profile2= (ImageView)findViewById(R.id.img_thongbao3);
         img_profile2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(ProfileUserActivity.this, DangXuat2.class);
+                Intent intent2= new Intent(ProfileUserActivity.this, DangXuat2.class);
                 startActivity(intent2);
             }
         });
+
 
         nexta= (ImageView)findViewById(R.id.next2);
         nexta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent3 = new Intent(ProfileUserActivity.this, DangXuat2.class);
+                Intent intent2= new Intent(ProfileUserActivity.this, DangXuat2.class);
+                startActivity(intent2);
+            }
+        });
+
+        img_goto_QLHS= (ImageView)findViewById(R.id.img_QLHS1);
+        img_goto_QLHS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(ProfileUserActivity.this, QLHS.class);
                 startActivity(intent3);
             }
         });

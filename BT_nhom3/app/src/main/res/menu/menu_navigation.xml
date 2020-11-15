@@ -3,7 +3,6 @@
     <item android:id="@+id/home"
         android:title=""
         android:icon="@drawable/ic_home"/>
-
     <item android:id="@+id/thongbao"
         android:title=""
         android:icon="@drawable/ic_messenger"/>

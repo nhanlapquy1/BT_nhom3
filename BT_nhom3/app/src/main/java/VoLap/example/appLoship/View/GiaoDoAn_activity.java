@@ -13,8 +13,9 @@ import com.example.circleview.R;
 
 public class  GiaoDoAn_activity extends AppCompatActivity {
     ViewFlipper viewFlipper2;
-    ImageView img_giamgia,img_backhome;
+    ImageView img_giamgia,img_backhome, img_giaodoan1,img_giaodoan2;
     Button bt_menu_all2, bt_cuaHang2,bt_cuaHang3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +44,23 @@ public class  GiaoDoAn_activity extends AppCompatActivity {
             }
         });
 
+        img_giaodoan1= (ImageView)findViewById(R.id.img_gda_banhmi1);
+        img_giaodoan1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2= new Intent(GiaoDoAn_activity.this, List_MonAn.class);
+                startActivity(intent2);
+            }
+        });
+
+        img_giaodoan2= (ImageView)findViewById(R.id.img_gdn_ch1);
+        img_giaodoan2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2= new Intent(GiaoDoAn_activity.this, GiamGia.class);
+                startActivity(intent2);
+            }
+        });
 
         bt_menu_all2=(Button)findViewById(R.id.btn_menu_ALL);
         bt_menu_all2.setOnClickListener(new View.OnClickListener() {

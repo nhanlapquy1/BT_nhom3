@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:background="#fff">
             <ImageView
-                android:id="@+id/btn_thongbao"
+                android:id="@+id/img_back_giaodoan1"
                 android:layout_width="25dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="20dp"

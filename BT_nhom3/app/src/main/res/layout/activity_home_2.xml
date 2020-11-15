@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="250dp">
@@ -88,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
                     android:layout_marginTop="60dp"
-                    android:text="48 Cao Thắng, Hải Châu, Đà..."
+                    android:text="48 Cao Thắng, Hải Châu, Đà Nẵng"
                     android:textColor="#000"
                     android:textStyle="bold" />
 
@@ -276,6 +275,7 @@
                                 android:gravity="center">
 
                                 <LinearLayout
+
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
@@ -284,6 +284,7 @@
                                     android:orientation="vertical">
 
                                     <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/img_banh_mi1"
                                         android:layout_width="120dp"
                                         android:layout_height="120dp"
                                         android:layout_gravity="center"
@@ -461,17 +462,14 @@
                                 android:layout_marginLeft="10dp"
                                 android:background="@drawable/botron3"
                                 android:orientation="vertical">
-
-
                                 <com.google.android.material.imageview.ShapeableImageView
+                                    android:id="@+id/img_chgb_1"
                                     android:layout_width="match_parent"
                                     android:layout_height="98dp"
-
                                     android:adjustViewBounds="true"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/chgb_1"
                                     app:shapeAppearanceOverlay="@style/roundimageview" />
-
                                 <LinearLayout
                                     android:layout_width="160dp"
                                     android:layout_height="wrap_content"
@@ -1519,15 +1517,13 @@
                      android:layout_height="wrap_content"
                      android:textStyle="bold"
                      android:textSize="50dp"/>
-
-
                 </LinearLayout>
-
             </LinearLayout>
 
-
         </LinearLayout>
+
     </ScrollView>
+
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 import androidx.annotation.NonNull;
@@ -24,6 +25,7 @@ import VoLap.example.appLoship.Adapter.HinhAnhHomeAdapter;
 public class  Home_Activity extends AppCompatActivity {
     ViewFlipper viewFlipper1;
     Button bt_menu_all2, bt_cuaHang2;
+    ImageView img_doan1,img_doan2;
     GridView gvHinhAnh;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,28 @@ public class  Home_Activity extends AppCompatActivity {
                 startActivity(Dis2);
             }
         });
+
+        img_doan1= (ImageView)findViewById(R.id.img_banh_mi1);
+        img_doan1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2= new Intent(Home_Activity.this, List_MonAn.class);
+                startActivity(intent2);
+            }
+        });
+
+        img_doan2= (ImageView)findViewById(R.id.img_chgb_1);
+        img_doan2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2= new Intent(Home_Activity.this, List_MonAn.class);
+                startActivity(intent2);
+            }
+        });
+
+
+
+
 
         BottomNavigationView btnview;
         btnview = (BottomNavigationView) findViewById(R.id.bottom_navigation);
