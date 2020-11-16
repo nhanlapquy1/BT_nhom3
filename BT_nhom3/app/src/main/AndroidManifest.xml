@@ -12,6 +12,7 @@
         <activity android:name="VoLap.example.appLoship.Model.NullActivity"/>
 
         <activity android:name="VoLap.example.appLoship.View.QLHS" />
+        <activity android:name="VoLap.example.appLoship.View.GioHangActivity" />
         <activity android:name="VoLap.example.appLoship.View.NewAccount" />
         <activity android:name="VoLap.example.appLoship.View.DangXuat" />
         <activity android:name="VoLap.example.appLoship.View.DangXuat2" />
