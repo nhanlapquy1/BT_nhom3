@@ -62,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
                     android:layout_marginTop="10dp"
-                    android:text="Chào buổi tối, Nhom6!"
+                    android:text="Chào buổi sáng, Nhom3!"
                     android:textColor="#000"
                     android:textStyle="bold" />
 
@@ -254,162 +254,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
                         android:background="@color/colorWhite"
-                        android:elevation="10dp"
-                        android:gravity="center"
                         android:orientation="horizontal">
-
-
-                        <HorizontalScrollView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:gravity="center">
-
-                                <LinearLayout
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginLeft="10dp"
-                                    android:gravity="center"
-                                    android:orientation="vertical">
-
-                                    <de.hdodenhof.circleimageview.CircleImageView
-                                        android:id="@+id/img_banh_mi1"
-                                        android:layout_width="120dp"
-                                        android:layout_height="120dp"
-                                        android:layout_gravity="center"
-                                        android:src="@drawable/cttl_1" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Bánh Mì"
-                                        android:textStyle="bold"
-                                        android:textColor="#000" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginLeft="10dp"
-                                    android:gravity="center"
-                                    android:orientation="vertical">
-
-                                    <de.hdodenhof.circleimageview.CircleImageView
-                                        android:layout_width="120dp"
-                                        android:layout_height="120dp"
-                                        android:layout_gravity="center"
-                                        android:src="@drawable/cttl_2" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:textStyle="bold"
-                                        android:text="Mì ý"
-                                        android:textColor="#000" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginLeft="10dp"
-                                    android:gravity="center"
-                                    android:orientation="vertical">
-
-                                    <de.hdodenhof.circleimageview.CircleImageView
-                                        android:layout_width="120dp"
-                                        android:layout_height="120dp"
-                                        android:layout_gravity="center"
-                                        android:src="@drawable/cttl_3" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:textStyle="bold"
-                                        android:text="Cơm tấm"
-                                        android:textColor="#000" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginLeft="10dp"
-                                    android:gravity="center"
-                                    android:orientation="vertical">
-
-                                    <de.hdodenhof.circleimageview.CircleImageView
-                                        android:layout_width="120dp"
-                                        android:layout_height="120dp"
-                                        android:layout_gravity="center"
-                                        android:src="@drawable/cttl_4" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:textStyle="bold"
-                                        android:text="Bún đậu"
-                                        android:textColor="#000" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginLeft="10dp"
-                                    android:gravity="center"
-                                    android:orientation="vertical">
-
-                                    <de.hdodenhof.circleimageview.CircleImageView
-                                        android:layout_width="120dp"
-                                        android:layout_height="120dp"
-                                        android:layout_gravity="center"
-                                        android:src="@drawable/cttl_5" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Bánh canh"
-                                        android:textStyle="bold"
-                                        android:textColor="#000" />
-                                </LinearLayout>
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginLeft="10dp"
-                                    android:gravity="center"
-                                    android:orientation="vertical">
-
-                                    <de.hdodenhof.circleimageview.CircleImageView
-                                        android:layout_width="120dp"
-                                        android:layout_height="120dp"
-                                        android:layout_gravity="center"
-                                        android:src="@drawable/cttl_6" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Ăn vặt"
-                                        android:textStyle="bold"
-                                        android:textColor="#000" />
-                                </LinearLayout>
-
-                            </LinearLayout>
-
-                        </HorizontalScrollView>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/RecyclerView_home1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="1dp"
+                            android:layout_marginTop="10dp"/>
                     </LinearLayout>
 
 
@@ -431,343 +285,27 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/btn_cua_hang"
+                        android:id="@+id/btn_cua_hang2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="90dp"
                         android:textColor="@android:color/holo_blue_dark"
                         android:background="@color/cardview_light_background"
                         android:text="Xem tất cả (+15)"/>
-
-
                 </LinearLayout>
+
+
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <HorizontalScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="215dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="200dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:id="@+id/img_chgb_1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/chgb_1"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Milk Tea"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="0.1 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" Freeship"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/chgb_2"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Bình mì Bình Minh"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="0.1 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" Freeship"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/chgb_3"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Mỳ ý Josin"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="0.1 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" Freeship"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/chgb_4"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Trà sữa OchaHouse"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="0.1 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" Freeship"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/chgb_5"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Bún đậu TipTip"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="0.1 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" Freeship"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </HorizontalScrollView>
-
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RecyclerView_home2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="1dp"
+                        android:layout_marginTop="10dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -785,7 +323,7 @@
                         android:textSize="20sp"
                         android:textStyle="bold" />
                     <Button
-                        android:id="@+id/Bt_ViewALL3"
+                        android:id="@+id/btn_cua_hang3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="90dp"
@@ -795,350 +333,18 @@
 
 
                 </LinearLayout>
+
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <HorizontalScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="215dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="200dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/qm_1"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Trà sữa Koi"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="0.5 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" Freeship"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/qm_2"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Trà sữa GongCha"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="0.5 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" Freeship"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/qm_3"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Trà sữa BoBưPOP"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="0.5 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" Freeship"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/qm_4"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Trà sữa Mr.GOOD Tea"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="0.7 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" Freeship"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/qm_5"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Trà sữa Ông thọ"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="1 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" Freeship"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </HorizontalScrollView>
-
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RecyclerView_home3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="1dp"
+                        android:layout_marginTop="10dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -1168,357 +374,98 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
                     android:orientation="horizontal">
-                    <HorizontalScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="215dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="200dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/dkm_1"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Nhà hàng Sáu Quê"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="4 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" 20%"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/dkm_2"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Bánh mì VIETSUB"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="2 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" 2km"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/dkm_3"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Nhà hàng Mường Thanh"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="7 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" 10%"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/dkm_4"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Nhà hàn Nam Thanh"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="3 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" 50%"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="170dp"
-                                android:layout_height="181dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/botron3"
-                                android:orientation="vertical">
-
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="98dp"
-
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/dkm_5"
-                                    app:shapeAppearanceOverlay="@style/roundimageview" />
-
-                                <LinearLayout
-                                    android:layout_width="160dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-
-                                        android:text="Restaurans"
-                                        android:textColor="#000"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:drawableLeft="@drawable/ic_map2"
-                                        android:text="2 km"
-                                        android:textColor="#000"
-                                        android:textSize="15sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="2dp">
-
-                                        <ImageView
-                                            android:layout_width="17dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_gravity="center"
-                                            android:src="@drawable/ic_khuyenmai" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text=" 50%"
-                                            android:textColor="#000"
-                                            android:textSize="15sp" />
-
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </HorizontalScrollView>
-
-                 <TextView
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
-                     android:textStyle="bold"
-                     android:textSize="50dp"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RecyclerView_home4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="1dp"
+                        android:layout_marginTop="10dp"/>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="Đang khuyễn mãi"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:background="@color/cardview_light_background"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/Bt_ViewALL5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:background="@color/cardview_light_background"
+                        android:text="Xem tất cả (+15)"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RecyclerView_home5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="1dp"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="179dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/cardview_light_background"
+                        android:gravity="center"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/btn_cua_hang4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:background="@color/cardview_light_background" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="179dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/cardview_light_background"
+                        android:gravity="center"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:background="@color/cardview_light_background"
+                        />
+                </LinearLayout>
+
+
             </LinearLayout>
+
 
         </LinearLayout>
 

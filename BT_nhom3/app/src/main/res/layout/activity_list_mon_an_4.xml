@@ -117,7 +117,7 @@
                 android:layout_marginBottom="10dp"
                 android:drawableLeft="@drawable/ic_map"
                 android:gravity="center"
-                android:text="81 bùi xương trạch"
+                android:text="48 Cao Thắng, Hải Châu, Đà Nẵng"
                 android:textColor="@android:color/primary_text_light"
                 android:textSize="15sp"
                 android:textStyle="bold" />

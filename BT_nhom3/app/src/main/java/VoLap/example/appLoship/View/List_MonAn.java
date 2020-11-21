@@ -41,16 +41,16 @@ public class List_MonAn extends AppCompatActivity {
         gridView =(GridView) findViewById(R.id.gv2);
         arrayList=new ArrayList<>();
 
+        arrayList.add(new List_monan_BaseAdapter("Bún đậu VNKK"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
+        arrayList.add(new List_monan_BaseAdapter("Bún đậu Haki"," 6.2km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
+        arrayList.add(new List_monan_BaseAdapter("Bún đậu MIN"," 6.3km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
+        arrayList.add(new List_monan_BaseAdapter("Milk"," 6.4km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
         arrayList.add(new List_monan_BaseAdapter("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
-        arrayList.add(new List_monan_BaseAdapter("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
-        arrayList.add(new List_monan_BaseAdapter("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
-        arrayList.add(new List_monan_BaseAdapter("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
-        arrayList.add(new List_monan_BaseAdapter("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
-        arrayList.add(new List_monan_BaseAdapter("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
-        arrayList.add(new List_monan_BaseAdapter("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
-        arrayList.add(new List_monan_BaseAdapter("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
-        arrayList.add(new List_monan_BaseAdapter("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
-        arrayList.add(new List_monan_BaseAdapter("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
+        arrayList.add(new List_monan_BaseAdapter("Milk"," 2.2km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
+        arrayList.add(new List_monan_BaseAdapter("Milk"," 6.1km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
+        arrayList.add(new List_monan_BaseAdapter("Milk"," 1.2km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
+        arrayList.add(new List_monan_BaseAdapter("Milk"," 2.3km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
+        arrayList.add(new List_monan_BaseAdapter("Milk"," 4.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
 
 
         adapter =new List_monan_Adapter(this,R.layout.activity_sup_giam_gia_4,arrayList);
