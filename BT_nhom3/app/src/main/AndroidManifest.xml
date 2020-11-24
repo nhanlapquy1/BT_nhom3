@@ -9,8 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="VoLap.example.appLoship.Model.NullActivity"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
 
+        <activity
+            android:name="VoLap.example.appLoship.View.MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <activity android:name="VoLap.example.appLoship.Model.Loading_activity"/>
+        <activity android:name="VoLap.example.appLoship.Model.NullActivity"/>
+        <activity android:name="VoLap.example.appLoship.View.LoXe_Activity" />
+        <activity android:name="VoLap.example.appLoship.View.GuiDo_Activity" />
+        <activity android:name="VoLap.example.appLoship.View.MapGiaoDoAn_Activity" />
         <activity android:name="VoLap.example.appLoship.View.QLHS" />
         <activity android:name="VoLap.example.appLoship.View.GioHangActivity" />
         <activity android:name="VoLap.example.appLoship.View.NewAccount" />
@@ -27,7 +38,7 @@
         <activity android:name="VoLap.example.appLoship.View.GiaoDoAn_activity" />
         <activity android:name="VoLap.example.appLoship.View.Login2_Activity" />
         <activity android:name="VoLap.example.appLoship.View.Home_Activity"/>
-        <activity android:name="VoLap.example.appLoship.Model.Loading_activity"/>
+
 
         <activity android:name="VoLap.example.appLoship.View.MainActivity">
             <intent-filter>

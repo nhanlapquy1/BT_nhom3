@@ -82,7 +82,7 @@
                     app:srcCompat="@drawable/ic_map" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/txtMap"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"

@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 import androidx.annotation.NonNull;
@@ -24,24 +25,21 @@ import java.util.List;
 
 import VoLap.example.appLoship.Adapter.CHGB_Adapter;
 import VoLap.example.appLoship.Adapter.CHGB_sup;
-import VoLap.example.appLoship.Adapter.GridView_Adapter;
 import VoLap.example.appLoship.Adapter.HinhAnhHome;
 import VoLap.example.appLoship.Adapter.HinhAnhHomeAdapter;
 import VoLap.example.appLoship.Adapter.MonAn_Adapter;
 import VoLap.example.appLoship.Adapter.MonAn_sup;
 
-public class  Home_Activity extends AppCompatActivity {
+public class Home_Activity extends AppCompatActivity {
     ViewFlipper viewFlipper1;
     Button bt_menu_all2, bt_cuaHang2;
     ImageView img_doan1,img_doan2;
     GridView gvHinhAnh;
-    RecyclerView list1;
+    TextView txtMaps;
     private RecyclerView rcv1, rcv2, rcv3,rcv4,rcv5;
     private MonAn_Adapter monAn_adapter;
     private CHGB_Adapter chgb_adapter;
     private Context context, context2, context3,context4,context5;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,35 +57,6 @@ public class  Home_Activity extends AppCompatActivity {
                 startActivity(Dis2);
             }
         });
-
-/*
-        bt_cuaHang2=(Button)findViewById(R.id.btn_cua_hang);
-        bt_cuaHang2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent Dis2=new Intent(Home_Activity.this, List_MonAn.class);
-                startActivity(Dis2);
-            }
-        });
-
-        img_doan1= (ImageView)findViewById(R.id.img_banh_mi1);
-        img_doan1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent2= new Intent(Home_Activity.this, List_MonAn.class);
-                startActivity(intent2);
-            }
-        });
-
-        img_doan2= (ImageView)findViewById(R.id.img_chgb_1);
-        img_doan2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent2= new Intent(Home_Activity.this, List_MonAn.class);
-                startActivity(intent2);
-            }
-        });
-*/
 
 
 
@@ -114,7 +83,7 @@ public class  Home_Activity extends AppCompatActivity {
             }
         });
 
-        overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
+        overridePendingTransition(R.anim.trai_sang_phai, R.anim.phai_sang_trai);
 
         List<HinhAnhHome> image_details = AnhXa();
         final GridView gridView = (GridView) findViewById(R.id.gridviewHinhAnh);
@@ -127,11 +96,25 @@ public class  Home_Activity extends AppCompatActivity {
                     Intent intent = new Intent(Home_Activity.this, GiaoDoAn_activity.class);
                     startActivity(intent);
                 }
+                if(o == gridView.getItemAtPosition(1)){
+                    Intent intent = new Intent(Home_Activity.this, LoXe_Activity.class);
+                    startActivity(intent);
+                }
+                if(o == gridView.getItemAtPosition(3)){
+                    Intent intent = new Intent(Home_Activity.this, GuiDo_Activity.class);
+                    startActivity(intent);
+                }
             }
         });
 
-
-
+        txtMaps = findViewById(R.id.txtMap);
+        txtMaps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home_Activity.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
 
         rcv1 = findViewById(R.id.RecyclerView_home1);
         rcv1.setHasFixedSize(true);
@@ -140,6 +123,7 @@ public class  Home_Activity extends AppCompatActivity {
         monAn_adapter = new MonAn_Adapter();
         monAn_adapter.setData(getListMonAn());
         rcv1.setAdapter(monAn_adapter);
+
 
 
         rcv2 = findViewById(R.id.RecyclerView_home2);
@@ -175,30 +159,29 @@ public class  Home_Activity extends AppCompatActivity {
         rcv5.setAdapter(chgb_adapter);
 
 
-
     }
 
     public List<HinhAnhHome> AnhXa(){
         List<HinhAnhHome> arrayImage = new ArrayList<>();
-        arrayImage.add(new HinhAnhHome("Giao Đồ Ăn",R.drawable.ic_loship_circle));
-        arrayImage.add(new HinhAnhHome("Gọi Xe",R.drawable.ic_loxe));
-        arrayImage.add(new HinhAnhHome("Đi chợ",R.drawable.ic_lomart));
-        arrayImage.add(new HinhAnhHome("Gửi hàng",R.drawable.ic_losend));
-        arrayImage.add(new HinhAnhHome("Giặt ủi",R.drawable.ic_lozat));
-        arrayImage.add(new HinhAnhHome("Mua thuốc",R.drawable.ic_lomed));
-        arrayImage.add(new HinhAnhHome("Mua gì cũng có",R.drawable.ic_lozi_landing));
-        arrayImage.add(new HinhAnhHome("Mua đồ thú cưng",R.drawable.ic_lopet));
-        arrayImage.add(new HinhAnhHome("Mua hoa",R.drawable.ic_lohoa));
+        arrayImage.add(new HinhAnhHome("Giao đồ ăn", R.drawable.ic_loship_circle));
+        arrayImage.add(new HinhAnhHome("Gọi xe", R.drawable.ic_loxe));
+        arrayImage.add(new HinhAnhHome("Đi chợ", R.drawable.ic_lomart));
+        arrayImage.add(new HinhAnhHome("Gửi hàng", R.drawable.ic_losend));
+        arrayImage.add(new HinhAnhHome("Giặt ủi", R.drawable.ic_lozat));
+        arrayImage.add(new HinhAnhHome("Mua thuốc", R.drawable.ic_lomed));
+        arrayImage.add(new HinhAnhHome("Mua gì cũng có", R.drawable.ic_lozi_landing));
+        arrayImage.add(new HinhAnhHome("Mua đồ thú cưng", R.drawable.ic_lopet));
+        arrayImage.add(new HinhAnhHome("Mua hoa", R.drawable.ic_lohoa));
         return arrayImage;
     }
 
     private List<MonAn_sup> getListMonAn() {
         List<MonAn_sup> listMonAn = new ArrayList<>();
         listMonAn.add(new MonAn_sup("Bánh mì", R.drawable.cttl_1));
-        listMonAn.add(new MonAn_sup("Bánh canh", R.drawable.cttl_5));
         listMonAn.add(new MonAn_sup("Mì ý", R.drawable.cttl_2));
         listMonAn.add(new MonAn_sup("Cơm Tấm", R.drawable.cttl_3));
         listMonAn.add(new MonAn_sup("Bún đậu", R.drawable.cttl_4));
+        listMonAn.add(new MonAn_sup("Bánh canh", R.drawable.cttl_5));
         listMonAn.add(new MonAn_sup("Ăn vặt", R.drawable.cttl_6));
         listMonAn.add(new MonAn_sup("Đồ uống", R.drawable.cttl_7));
         return listMonAn;

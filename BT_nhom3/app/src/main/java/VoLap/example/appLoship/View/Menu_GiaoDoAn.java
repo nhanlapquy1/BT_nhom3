@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.circleview.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import VoLap.example.appLoship.Adapter.GridView_Adapter;
 import VoLap.example.appLoship.Adapter.GridView_Sup;
@@ -40,6 +41,7 @@ ImageView img_back_giaodoan;
 
 
 
+
         Anhxa();
         adapter = new GridView_Adapter(this,R.layout.activity_sup_menu_giaodoan_4,arrayList);
         gridHinhAnh.setAdapter(adapter);
@@ -51,12 +53,12 @@ ImageView img_back_giaodoan;
                     Intent intent = new Intent(Menu_GiaoDoAn.this, DoAn_BanhMi_Activity.class);
                     startActivity(intent);
                 }
-
             }
         });
+
     }
 
-    private void Anhxa(){
+    private List<GridView_Sup> Anhxa(){
         gridHinhAnh = (GridView)findViewById(R.id.gridviewServices);
         arrayList = new ArrayList<>();
         arrayList.add(new GridView_Sup("Bánh mỳ",R.drawable.monan_banhmy));
@@ -74,6 +76,7 @@ ImageView img_back_giaodoan;
         arrayList.add(new GridView_Sup("Trà sửa",R.drawable.monan_trasua2));
         arrayList.add(new GridView_Sup("Đồ ăn combo",R.drawable.monan_combo));
         arrayList.add(new GridView_Sup("Bánh cuộn",R.drawable.monan_banhtrangcuon));
+        return null;
     }
 
 }

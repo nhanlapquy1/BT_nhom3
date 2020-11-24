@@ -3,9 +3,12 @@ package VoLap.example.appLoship.View;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +29,7 @@ public class  GiaoDoAn_activity extends AppCompatActivity {
     ViewFlipper viewFlipper2;
     ImageView img_giamgia,img_backhome, img_giaodoan1,img_giaodoan2;
     Button bt_menu_all2, bt_cuaHang2,bt_cuaHang3;
+    TextView txtMaps;
     private RecyclerView rcv1, rcv2, rcv3,rcv4,rcv5;
     private MonAn_Adapter monAn_adapter;
     private CHGB_Adapter chgb_adapter;
@@ -111,6 +115,27 @@ public class  GiaoDoAn_activity extends AppCompatActivity {
         monAn_adapter = new MonAn_Adapter();
         monAn_adapter.setData(getListMonAn());
         rcv1.setAdapter(monAn_adapter);
+        rcv1.addOnItemTouchListener(new RecyclerItemClickListener(this, rcv1, new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent=new Intent(GiaoDoAn_activity.this, DoAn_BanhMi_Activity.class);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onLongItemClick(View view, int position) {
+
+            }
+        }));
+
+        txtMaps = findViewById(R.id.txtMap2);
+        txtMaps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GiaoDoAn_activity.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         rcv2 = findViewById(R.id.RecyclerView_main2);
@@ -208,5 +233,50 @@ public class  GiaoDoAn_activity extends AppCompatActivity {
         list_CHGB.add(new CHGB_sup("Bóp bư bự", " 6.5km", "Freeship", R.drawable.chgb_3));
         return list_CHGB;
     }
+
+}
+
+class RecyclerItemClickListener implements RecyclerView.OnItemTouchListener {
+    private OnItemClickListener mListener;
+
+    public interface OnItemClickListener {
+        public void onItemClick(View view, int position);
+
+        public void onLongItemClick(View view, int position);
+    }
+
+    GestureDetector mGestureDetector;
+
+    public RecyclerItemClickListener(Context context, final RecyclerView recyclerView, OnItemClickListener listener) {
+        mListener = listener;
+        mGestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
+            @Override
+            public boolean onSingleTapUp(MotionEvent e) {
+                return true;
+            }
+
+            @Override
+            public void onLongPress(MotionEvent e) {
+                View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
+                if (child != null && mListener != null) {
+                    mListener.onLongItemClick(child, recyclerView.getChildAdapterPosition(child));
+                }
+            }
+        });
+    }
+
+    @Override public boolean onInterceptTouchEvent(RecyclerView view, MotionEvent e) {
+        View childView = view.findChildViewUnder(e.getX(), e.getY());
+        if (childView != null && mListener != null && mGestureDetector.onTouchEvent(e)) {
+            mListener.onItemClick(childView, view.getChildAdapterPosition(childView));
+            return true;
+        }
+        return false;
+    }
+
+    @Override public void onTouchEvent(RecyclerView view, MotionEvent motionEvent) { }
+
+    @Override
+    public void onRequestDisallowInterceptTouchEvent (boolean disallowIntercept){}
 
 }

@@ -12,6 +12,8 @@ import com.example.circleview.R;
 
 import java.util.List;
 
+import VoLap.example.appLoship.View.Menu_GiaoDoAn;
+
 public class GridView_Adapter extends BaseAdapter {
 
     private Context context;
@@ -22,6 +24,9 @@ public class GridView_Adapter extends BaseAdapter {
         this.context = context;
         this.layout = layout;
         this.hinhanhList = hinhanhList;
+    }
+
+    public GridView_Adapter(Menu_GiaoDoAn menu_giaoDoAn, List<GridView_Sup> image_details) {
     }
 
     @Override

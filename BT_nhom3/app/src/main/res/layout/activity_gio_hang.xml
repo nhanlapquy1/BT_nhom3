@@ -70,7 +70,7 @@
                 app:srcCompat="@drawable/ic_map" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/txtMap3"
                 android:layout_width="263dp"
                 android:layout_height="35dp"
                 android:layout_marginTop="15dp"
@@ -196,14 +196,14 @@
             android:layout_height="87dp">
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/txtDonGia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="42dp"
-                android:text="39.000 đ"
+                android:text="39.000"
                 android:textSize="18dp" />
 
             <TextView
@@ -239,7 +239,7 @@
                 app:srcCompat="@drawable/ic_add" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/txtSoLuong"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -273,7 +273,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/txtGia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
