@@ -21,7 +21,7 @@ public class GioHangActivity extends AppCompatActivity {
         bt_giohang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Dis2=new Intent(GioHangActivity.this, GiaoDoAn_activity.class);
+                Intent Dis2=new Intent(GioHangActivity.this, DoAn_BanhMi_Activity.class);
                 startActivity(Dis2);
             }
         });

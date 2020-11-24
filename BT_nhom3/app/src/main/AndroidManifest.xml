@@ -17,6 +17,7 @@
         <activity android:name="VoLap.example.appLoship.View.DangXuat" />
         <activity android:name="VoLap.example.appLoship.View.DangXuat2" />
         <activity android:name="VoLap.example.appLoship.View.GiamGia" />
+        <activity android:name="VoLap.example.appLoship.View.DoAn_BanhCanh_activity" />
         <activity android:name="VoLap.example.appLoship.View.DoAn_BanhMi_Activity" />
         <activity android:name="VoLap.example.appLoship.View.List_MonAn" />
         <activity android:name="VoLap.example.appLoship.View.Menu_GiaoDoAn" />

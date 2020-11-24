@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="250dp">
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -112,11 +112,7 @@
     </LinearLayout>
 
 
-
-
-
-
-    <ScrollView
+        <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
@@ -293,8 +289,6 @@
                         android:background="@color/cardview_light_background"
                         android:text="Xem tất cả (+15)"/>
                 </LinearLayout>
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -311,7 +305,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
                     <TextView
                         android:layout_width="179dp"
                         android:layout_height="48dp"
@@ -330,10 +323,7 @@
                         android:textColor="@android:color/holo_blue_dark"
                         android:background="@color/cardview_light_background"
                         android:text="Xem tất cả (+15)"/>
-
-
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -462,11 +452,7 @@
                         android:background="@color/cardview_light_background"
                         />
                 </LinearLayout>
-
-
             </LinearLayout>
-
-
         </LinearLayout>
 
     </ScrollView>

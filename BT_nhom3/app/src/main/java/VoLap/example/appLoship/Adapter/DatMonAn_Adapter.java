@@ -8,20 +8,22 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.List;
 import com.example.circleview.R;
 
-public class List_monan_Adapter extends BaseAdapter {
+import java.util.List;
 
+
+public class DatMonAn_Adapter  extends BaseAdapter{
     Context context;
     int Layout;
-    List<List_monan_Sup> arrayList;
+    List<DatMonAn_Sup> arrayList;
 
-    public List_monan_Adapter(Context context, int layout, List<List_monan_Sup> arrayList) {
+    public DatMonAn_Adapter(Context context, int layout, List<DatMonAn_Sup> arrayList) {
         this.context = context;
         Layout = layout;
         this.arrayList = arrayList;
     }
+
 
     @Override
     public int getCount() {
@@ -38,20 +40,16 @@ public class List_monan_Adapter extends BaseAdapter {
         return 0;
     }
 
-
     class ViewHolder{
         TextView tvName;
-        TextView tvAdd;
-        TextView tvTitle;
-        TextView tvKM;
-        TextView tvlike;
+        TextView tvMoney;
         ImageView img;
     }
 
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
-        ViewHolder viewHolder;
+       ViewHolder viewHolder;
 
         if (convertView == null){
 
@@ -60,12 +58,9 @@ public class List_monan_Adapter extends BaseAdapter {
             viewHolder=new ViewHolder();
 
             //
-            viewHolder.tvName=(TextView) convertView.findViewById(R.id.name_monan);
-            viewHolder.tvAdd=(TextView) convertView.findViewById(R.id.tv_khoangcach);
-            viewHolder.tvTitle=(TextView) convertView.findViewById(R.id.tv_doitac);
-            viewHolder.tvKM=(TextView) convertView.findViewById(R.id.tv_freeship);
-            viewHolder.tvlike=(TextView) convertView.findViewById(R.id.tv_like);
-            viewHolder.img=(ImageView) convertView.findViewById(R.id.img2);
+            viewHolder.tvName=(TextView) convertView.findViewById(R.id.tv_dma_name);
+            viewHolder.tvMoney=(TextView) convertView.findViewById(R.id.tv_dma_gia);
+            viewHolder.img=(ImageView) convertView.findViewById(R.id.imag_dma);
 
             convertView.setTag(viewHolder);
 
@@ -74,12 +69,10 @@ public class List_monan_Adapter extends BaseAdapter {
             viewHolder= (ViewHolder) convertView.getTag();
         }
         //
-        viewHolder.tvName.setText(arrayList.get(position).name);
-        viewHolder.tvAdd.setText(arrayList.get(position).add);
-        viewHolder.tvTitle.setText(arrayList.get(position).title);
-        viewHolder.tvKM.setText(arrayList.get(position).KM);
-        viewHolder.tvlike.setText(arrayList.get(position).like);
-        viewHolder.img.setImageResource(arrayList.get(position).img);
+        viewHolder.tvName.setText(arrayList.get(position).name_dma);
+        viewHolder.tvMoney.setText(arrayList.get(position).Money_dma);
+        viewHolder.img.setImageResource(arrayList.get(position).img_dma);
         return convertView;
     }
 }
+

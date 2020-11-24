@@ -21,7 +21,7 @@ public class Loading_activity extends AppCompatActivity {
             public void run(){
                 try {
                     //CheckInternetConnection.ShowToast_Short(getApplicationContext(),"Login Success");
-                    sleep(1000);
+                    sleep(2000);
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
 

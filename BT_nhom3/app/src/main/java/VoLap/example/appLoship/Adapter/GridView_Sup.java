@@ -1,10 +1,10 @@
 package VoLap.example.appLoship.Adapter;
 
-public class GridViewBean_a {
+public class GridView_Sup {
     private  int hinhanh;
     private String ten;
 
-    public GridViewBean_a(String ten, int hinhanh){
+    public GridView_Sup(String ten, int hinhanh){
         this.hinhanh = hinhanh;
         this.ten = ten;
     }

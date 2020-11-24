@@ -13,14 +13,15 @@ import com.example.circleview.R;
 
 import java.util.ArrayList;
 
-import VoLap.example.appLoship.Adapter.GridViewBaseAdapter_a;
-import VoLap.example.appLoship.Adapter.GridViewBean_a;
+import VoLap.example.appLoship.Adapter.GridView_Adapter;
+import VoLap.example.appLoship.Adapter.GridView_Sup;
+import VoLap.example.appLoship.Adapter.HinhAnhHomeAdapter;
 
 public class Menu_GiaoDoAn extends AppCompatActivity {
 ImageView img_back_giaodoan;
     GridView gridHinhAnh;
-    ArrayList<GridViewBean_a> arrayList;
-    GridViewBaseAdapter_a adapter;
+    ArrayList<GridView_Sup> arrayList;
+    GridView_Adapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,8 +39,9 @@ ImageView img_back_giaodoan;
         });
 
 
+
         Anhxa();
-        adapter = new GridViewBaseAdapter_a(this,R.layout.activity_sup_menu_giaodoan_4,arrayList);
+        adapter = new GridView_Adapter(this,R.layout.activity_sup_menu_giaodoan_4,arrayList);
         gridHinhAnh.setAdapter(adapter);
         gridHinhAnh.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -49,27 +51,29 @@ ImageView img_back_giaodoan;
                     Intent intent = new Intent(Menu_GiaoDoAn.this, DoAn_BanhMi_Activity.class);
                     startActivity(intent);
                 }
+
             }
         });
-
     }
+
     private void Anhxa(){
         gridHinhAnh = (GridView)findViewById(R.id.gridviewServices);
         arrayList = new ArrayList<>();
-        arrayList.add(new GridViewBean_a("Bánh mỳ",R.drawable.monan_banhmy));
-        arrayList.add(new GridViewBean_a("Bánh canh ghẹ",R.drawable.monan_banhcanhghe));
-        arrayList.add(new GridViewBean_a("Bánh canh giò",R.drawable.monan_banhcanhgio));
-        arrayList.add(new GridViewBean_a("Bánh tráng",R.drawable.monan_banhtrang));
-        arrayList.add(new GridViewBean_a("Bánh cuộn",R.drawable.monan_banhtrangcuon));
-        arrayList.add(new GridViewBean_a("Cá viên chiên",R.drawable.monan_cavienchien));
-        arrayList.add(new GridViewBean_a("Cơm",R.drawable.monan_com));
-        arrayList.add(new GridViewBean_a("Đồ ăn combo",R.drawable.monan_combo));
-        arrayList.add(new GridViewBean_a("Bánh cuộn",R.drawable.monan_banhtrangcuon));
-        arrayList.add(new GridViewBean_a("Bánh tráng",R.drawable.monan_banhtrang));
-        arrayList.add(new GridViewBean_a("Cơm sườn",R.drawable.monan_comsuon));
-        arrayList.add(new GridViewBean_a("Trà sửa",R.drawable.monan_trasua));
-        arrayList.add(new GridViewBean_a("Trà sửa",R.drawable.monan_trasua1));
-        arrayList.add(new GridViewBean_a("Trà sửa",R.drawable.monan_trasua2));
+        arrayList.add(new GridView_Sup("Bánh mỳ",R.drawable.monan_banhmy));
+        arrayList.add(new GridView_Sup("Bánh canh ",R.drawable.monan_banhcanhghe));
+        arrayList.add(new GridView_Sup("Bánh tráng",R.drawable.monan_banhtrang));
+        arrayList.add(new GridView_Sup("Bánh cuộn",R.drawable.monan_banhtrangcuon));
+        arrayList.add(new GridView_Sup("Cá viên chiên",R.drawable.monan_cavienchien));
+        arrayList.add(new GridView_Sup("Cơm",R.drawable.monan_com));
+        arrayList.add(new GridView_Sup("Đồ ăn combo",R.drawable.monan_combo));
+        arrayList.add(new GridView_Sup("Bánh cuộn",R.drawable.monan_banhtrangcuon));
+        arrayList.add(new GridView_Sup("Bánh tráng",R.drawable.monan_banhtrang));
+        arrayList.add(new GridView_Sup("Cơm sườn",R.drawable.monan_comsuon));
+        arrayList.add(new GridView_Sup("Trà sửa",R.drawable.monan_trasua));
+        arrayList.add(new GridView_Sup("Trà sửa",R.drawable.monan_trasua1));
+        arrayList.add(new GridView_Sup("Trà sửa",R.drawable.monan_trasua2));
+        arrayList.add(new GridView_Sup("Đồ ăn combo",R.drawable.monan_combo));
+        arrayList.add(new GridView_Sup("Bánh cuộn",R.drawable.monan_banhtrangcuon));
     }
 
 }

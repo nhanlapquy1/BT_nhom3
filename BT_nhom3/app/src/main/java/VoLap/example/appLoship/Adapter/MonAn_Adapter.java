@@ -24,11 +24,19 @@ public class MonAn_Adapter extends RecyclerView.Adapter<MonAn_Adapter.MonAnViewH
        notifyDataSetChanged();
    }
 
+   private OnItemClickListener mListMonAn;
+   public interface OnItemClickListener{
+        void onItemClick(int position);
+   }
+   public void setOnItemClickListener(OnItemClickListener listener ){
+       mListMonAn=listener;
+   }
+
     @NonNull
     @Override
     public MonAnViewHoder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_sup_giaodoan, parent,false);
-        return  new MonAnViewHoder(view);
+        return  new MonAnViewHoder(view,mListMonAn);
     }
 
     @Override
@@ -56,11 +64,22 @@ public class MonAn_Adapter extends RecyclerView.Adapter<MonAn_Adapter.MonAnViewH
         private TextView tvname_MA;
         private ImageView img_MA;
 
-        public MonAnViewHoder(@NonNull View itemView) {
+        public MonAnViewHoder(@NonNull View itemView, final OnItemClickListener listener  ) {
             super(itemView);
-
             tvname_MA=itemView.findViewById(R.id.text_MonAn);
             img_MA=itemView.findViewById(R.id.img_MonAn);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (listener !=null){
+                        int position =getAdapterPosition();
+                        if (position!=RecyclerView.NO_POSITION){
+                            listener.onItemClick(position);
+                        }
+                    }
+                }
+            });
         }
     }
 }

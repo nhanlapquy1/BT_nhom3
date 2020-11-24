@@ -24,6 +24,7 @@ import java.util.List;
 
 import VoLap.example.appLoship.Adapter.CHGB_Adapter;
 import VoLap.example.appLoship.Adapter.CHGB_sup;
+import VoLap.example.appLoship.Adapter.GridView_Adapter;
 import VoLap.example.appLoship.Adapter.HinhAnhHome;
 import VoLap.example.appLoship.Adapter.HinhAnhHomeAdapter;
 import VoLap.example.appLoship.Adapter.MonAn_Adapter;
@@ -34,10 +35,13 @@ public class  Home_Activity extends AppCompatActivity {
     Button bt_menu_all2, bt_cuaHang2;
     ImageView img_doan1,img_doan2;
     GridView gvHinhAnh;
+    RecyclerView list1;
     private RecyclerView rcv1, rcv2, rcv3,rcv4,rcv5;
     private MonAn_Adapter monAn_adapter;
     private CHGB_Adapter chgb_adapter;
     private Context context, context2, context3,context4,context5;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -127,6 +131,8 @@ public class  Home_Activity extends AppCompatActivity {
         });
 
 
+
+
         rcv1 = findViewById(R.id.RecyclerView_home1);
         rcv1.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager1 = new LinearLayoutManager(context, RecyclerView.HORIZONTAL, false);
@@ -169,6 +175,7 @@ public class  Home_Activity extends AppCompatActivity {
         rcv5.setAdapter(chgb_adapter);
 
 
+
     }
 
     public List<HinhAnhHome> AnhXa(){
@@ -188,10 +195,10 @@ public class  Home_Activity extends AppCompatActivity {
     private List<MonAn_sup> getListMonAn() {
         List<MonAn_sup> listMonAn = new ArrayList<>();
         listMonAn.add(new MonAn_sup("Bánh mì", R.drawable.cttl_1));
+        listMonAn.add(new MonAn_sup("Bánh canh", R.drawable.cttl_5));
         listMonAn.add(new MonAn_sup("Mì ý", R.drawable.cttl_2));
         listMonAn.add(new MonAn_sup("Cơm Tấm", R.drawable.cttl_3));
         listMonAn.add(new MonAn_sup("Bún đậu", R.drawable.cttl_4));
-        listMonAn.add(new MonAn_sup("Bánh canh", R.drawable.cttl_5));
         listMonAn.add(new MonAn_sup("Ăn vặt", R.drawable.cttl_6));
         listMonAn.add(new MonAn_sup("Đồ uống", R.drawable.cttl_7));
         return listMonAn;

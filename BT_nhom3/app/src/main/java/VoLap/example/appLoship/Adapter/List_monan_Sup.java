@@ -4,7 +4,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-public class List_monan_BaseAdapter extends BaseAdapter {
+public class List_monan_Sup extends BaseAdapter {
     public String name;
     public String add;
     public  String title;
@@ -12,7 +12,7 @@ public class List_monan_BaseAdapter extends BaseAdapter {
     public  String like;
     public int img;
 
-    public List_monan_BaseAdapter(String name, String add, String title, String KM,String like, int img) {
+    public List_monan_Sup(String name, String add, String title, String KM, String like, int img) {
         this.name = name;
         this.add = add;
         this.title = title;
