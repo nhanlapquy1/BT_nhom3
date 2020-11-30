@@ -62,25 +62,7 @@ public class  GiaoDoAn_activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-/*
-        img_giaodoan1= (ImageView)findViewById(R.id.img_gda_banhmi1);
-        img_giaodoan1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent2= new Intent(GiaoDoAn_activity.this, List_MonAn.class);
-                startActivity(intent2);
-            }
-        });
 
-        img_giaodoan2= (ImageView)findViewById(R.id.img_gdn_ch1);
-        img_giaodoan2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent2= new Intent(GiaoDoAn_activity.this, GiamGia.class);
-                startActivity(intent2);
-            }
-        });
-*/
         bt_menu_all2=(Button)findViewById(R.id.btn_menu_ALL);
         bt_menu_all2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,7 +100,7 @@ public class  GiaoDoAn_activity extends AppCompatActivity {
         rcv1.addOnItemTouchListener(new RecyclerItemClickListener(this, rcv1, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                Intent intent=new Intent(GiaoDoAn_activity.this, DoAn_BanhMi_Activity.class);
+                Intent intent=new Intent(GiaoDoAn_activity.this, List_MonAn.class);
                 startActivity(intent);
             }
 

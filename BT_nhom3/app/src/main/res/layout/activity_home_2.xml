@@ -111,7 +111,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
-
         <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -220,50 +219,6 @@
                     </ViewFlipper>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/cardview_light_background">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:gravity="center"
-                        android:text="Chọn theo thể loại"
-                        android:textColor="@android:color/secondary_text_light"
-                        android:background="@color/cardview_light_background"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <Button
-                        android:id="@+id/btn_menu_ALL"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="90dp"
-                        android:textColor="@android:color/holo_blue_dark"
-                        android:background="@color/cardview_light_background"
-                        android:text="Xem tất cả (+15)"/>
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/colorWhite"
-                        android:orientation="horizontal">
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/RecyclerView_home1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            tools:layout_editor_absoluteY="1dp"
-                            android:layout_marginTop="10dp"/>
-                    </LinearLayout>
-
-
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -281,7 +236,7 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/btn_cua_hang2"
+                        android:id="@+id/btn_home_cua_hang2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="90dp"
@@ -353,7 +308,7 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/Bt_ViewALL4"
+                        android:id="@+id/Bt_home_ViewALL4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="90dp"
@@ -385,13 +340,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:gravity="center"
-                        android:text="Đang khuyễn mãi"
+                        android:text="Thương hiệu quen"
                         android:textColor="@android:color/secondary_text_light"
                         android:background="@color/cardview_light_background"
                         android:textSize="20sp"
                         android:textStyle="bold" />
                     <Button
-                        android:id="@+id/Bt_ViewALL5"
+                        android:id="@+id/Bt_home_ViewALL5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="90dp"

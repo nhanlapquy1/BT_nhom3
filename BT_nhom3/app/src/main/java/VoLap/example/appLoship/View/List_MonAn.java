@@ -48,7 +48,7 @@ public class List_MonAn extends AppCompatActivity {
         gridView =(GridView) findViewById(R.id.gv2);
         arrayList=new ArrayList<>();
 
-        arrayList.add(new List_monan_Sup("Bún đậu VNKK"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
+        arrayList.add(new List_monan_Sup("Bánh mì"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
         arrayList.add(new List_monan_Sup("Bún đậu Haki"," 6.2km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
         arrayList.add(new List_monan_Sup("Bún đậu MIN"," 6.3km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
         arrayList.add(new List_monan_Sup("Milk"," 6.4km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));

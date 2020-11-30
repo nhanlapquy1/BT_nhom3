@@ -49,14 +49,16 @@ public class Home_Activity extends AppCompatActivity {
         viewFlipper1.setFlipInterval(2000);
         viewFlipper1.setAutoStart(true);
 
-        bt_menu_all2=(Button)findViewById(R.id.btn_menu_ALL);
-        bt_menu_all2.setOnClickListener(new View.OnClickListener() {
+
+        bt_cuaHang2=(Button)findViewById(R.id.btn_home_cua_hang2);
+        bt_cuaHang2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Dis2=new Intent(Home_Activity.this, Menu_GiaoDoAn.class);
-                startActivity(Dis2);
+                Intent Dis3=new Intent(Home_Activity.this, List_MonAn.class);
+                startActivity(Dis3);
             }
         });
+
 
 
 
@@ -116,13 +118,6 @@ public class Home_Activity extends AppCompatActivity {
             }
         });
 
-        rcv1 = findViewById(R.id.RecyclerView_home1);
-        rcv1.setHasFixedSize(true);
-        LinearLayoutManager linearLayoutManager1 = new LinearLayoutManager(context, RecyclerView.HORIZONTAL, false);
-        rcv1.setLayoutManager(linearLayoutManager1);
-        monAn_adapter = new MonAn_Adapter();
-        monAn_adapter.setData(getListMonAn());
-        rcv1.setAdapter(monAn_adapter);
 
 
 
@@ -133,6 +128,23 @@ public class Home_Activity extends AppCompatActivity {
         chgb_adapter = new CHGB_Adapter();
         chgb_adapter.setData(getListCHGB1());
         rcv2.setAdapter(chgb_adapter);
+        rcv2.addOnItemTouchListener(new RecyclerItemClickListener(this, rcv2, new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent=new Intent(Home_Activity.this, DoAn_BanhMi_Activity.class);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onLongItemClick(View view, int position) {
+
+            }
+        }));
+
+
+
+
+
 
         rcv3 = findViewById(R.id.RecyclerView_home3);
         rcv3.setHasFixedSize(true);
@@ -175,17 +187,6 @@ public class Home_Activity extends AppCompatActivity {
         return arrayImage;
     }
 
-    private List<MonAn_sup> getListMonAn() {
-        List<MonAn_sup> listMonAn = new ArrayList<>();
-        listMonAn.add(new MonAn_sup("Bánh mì", R.drawable.cttl_1));
-        listMonAn.add(new MonAn_sup("Mì ý", R.drawable.cttl_2));
-        listMonAn.add(new MonAn_sup("Cơm Tấm", R.drawable.cttl_3));
-        listMonAn.add(new MonAn_sup("Bún đậu", R.drawable.cttl_4));
-        listMonAn.add(new MonAn_sup("Bánh canh", R.drawable.cttl_5));
-        listMonAn.add(new MonAn_sup("Ăn vặt", R.drawable.cttl_6));
-        listMonAn.add(new MonAn_sup("Đồ uống", R.drawable.cttl_7));
-        return listMonAn;
-    }
 
     private List<CHGB_sup> getListCHGB1() {
         List<CHGB_sup> list_CHGB = new ArrayList<>();
