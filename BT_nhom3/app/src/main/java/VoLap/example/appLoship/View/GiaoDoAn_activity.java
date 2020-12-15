@@ -218,7 +218,7 @@ public class  GiaoDoAn_activity extends AppCompatActivity {
 
 }
 
-class RecyclerItemClickListener implements RecyclerView.OnItemTouchListener {
+    class RecyclerItemClickListener implements RecyclerView.OnItemTouchListener {
     private OnItemClickListener mListener;
 
     public interface OnItemClickListener {

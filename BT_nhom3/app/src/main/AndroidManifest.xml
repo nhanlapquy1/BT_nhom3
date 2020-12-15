@@ -38,7 +38,8 @@
         <activity android:name="VoLap.example.appLoship.View.GiaoDoAn_activity" />
         <activity android:name="VoLap.example.appLoship.View.Login2_Activity" />
         <activity android:name="VoLap.example.appLoship.View.Home_Activity"/>
-
+        <activity android:name="VoLap.example.appLoship.View.DonHang_activity"/>
+        <activity android:name="VoLap.example.appLoship.View.ChiTietDH_activity"/>
 
         <activity android:name="VoLap.example.appLoship.View.MainActivity">
             <intent-filter>

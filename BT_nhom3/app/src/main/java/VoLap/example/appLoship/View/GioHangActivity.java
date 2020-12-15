@@ -14,7 +14,7 @@ import com.example.circleview.R;
 
 public class GioHangActivity extends AppCompatActivity {
     Button bt_giohang;
-    ImageButton imageButtonTru,imageButtonCong;
+        ImageButton imageButtonTru,imageButtonCong;
     TextView txtSoLuong, txtMaps;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class GioHangActivity extends AppCompatActivity {
         bt_giohang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Dis2=new Intent(GioHangActivity.this, GiaoDoAn_activity.class);
+                Intent Dis2=new Intent(GioHangActivity.this, DonHang_activity.class);
                 startActivity(Dis2);
             }
         });

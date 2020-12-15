@@ -145,7 +145,6 @@ public class Home_Activity extends AppCompatActivity {
 
 
 
-
         rcv3 = findViewById(R.id.RecyclerView_home3);
         rcv3.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager3 = new LinearLayoutManager(context3, RecyclerView.HORIZONTAL, false);
