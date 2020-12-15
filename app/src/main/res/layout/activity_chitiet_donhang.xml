@@ -49,10 +49,10 @@
 
 
             <RelativeLayout
-                android:background="@color/colorWhite"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -81,13 +81,13 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="59dp"
-                    android:layout_height="28dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="315dp"
-                    android:layout_marginTop="-3dp"
+                    android:layout_marginTop="1dp"
                     android:layout_marginEnd="37dp"
                     android:background="@drawable/ic_mo"
                     android:gravity="center"
@@ -411,19 +411,17 @@
 
             </RelativeLayout>
 
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="381dp"
+                android:layout_height="15dp" />
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="108dp"
-                android:layout_marginTop="10dp"
                 android:background="@color/colorWhite">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="21dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp" />
 
 
                 <TextView
@@ -433,7 +431,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="7dp"
-                    android:layout_marginTop="39dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="212dp"
                     android:text="Tổng"
                     android:textColor="@color/colorBlack"
@@ -448,7 +446,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="337dp"
-                    android:layout_marginTop="39dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="18dp"
                     android:text="39.000"
                     android:textColor="@color/colorBlack"
