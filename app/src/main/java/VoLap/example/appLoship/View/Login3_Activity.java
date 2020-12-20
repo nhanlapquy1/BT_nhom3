@@ -1,5 +1,4 @@
 package VoLap.example.appLoship.View;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,49 +7,46 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 import com.example.circleview.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+public class Login3_Activity extends AppCompatActivity{
 
-public class Login1_Activity extends AppCompatActivity {
-    Button btcontinued;
-
-    private EditText Editex_login_sdt;
-    private Button buttonCall;
-
-
+    Button btStartHome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_1);
+        setContentView(R.layout.activity_longin_3);
 
         overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
-        btcontinued=(Button)findViewById(R.id.bt_continued);
-        btcontinued.setOnClickListener(new View.OnClickListener() {
+        btStartHome=(Button)findViewById(R.id.bt_StartHome);
+        btStartHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Dis2=new Intent(Login1_Activity.this, Login2_Activity.class);
+                Intent Dis2=new Intent(Login3_Activity.this, Home_Activity.class);
                 startActivity(Dis2);
             }
         });
 
-        final TextInputEditText editText = findViewById(R.id.login1_sdt);
-        final TextInputLayout usernameWrapper = findViewById(R.id.R_edt_sdt);
+        final TextInputEditText editText = findViewById(R.id.edt_name);
+        final TextInputLayout usernameWrapper = findViewById(R.id.R_name);
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence , int start, int count, int after) {
+
             }
 
             @Override
             public void onTextChanged(CharSequence charSequence , int start, int before, int count) {
+
                 if (charSequence.length() ==0) {
-                    usernameWrapper.setError("Vui lòng nhập số ");
+                    usernameWrapper.setError("Bạn bắt buộc phải nhập usernam");
                 } else {
-                    usernameWrapper.setError("Số hợp lệ");
+                    usernameWrapper.setError("Tên hợp lệ");
                 }
+
             }
 
             @Override
@@ -58,9 +54,7 @@ public class Login1_Activity extends AppCompatActivity {
 
             }
         });
+
+
     }
 }
-
-
-
-

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="VoLap.example.appLoship.View.Login2_Activity">
+    tools:context="VoLap.example.appLoship.View.Login3_Activity">
 
     <LinearLayout
         android:id="@+id/head"
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,6 +22,7 @@
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold" />
+
         <EditText
 
             android:id="@+id/infoTxtCredits"
@@ -30,6 +32,7 @@
             android:layout_gravity="center"
             android:autoLink="web"
             android:linksClickable="true" />
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="130dp"
             android:layout_height="130dp"
@@ -37,15 +40,16 @@
             android:background="@drawable/circle"
             android:padding="2dp"
             android:src="@drawable/ic_account" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             android:text="Tên đầy đủ của bạn"
             android:textColor="@color/colorBlack"
-            android:textStyle="bold"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/R_name"

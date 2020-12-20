@@ -21,27 +21,36 @@
 
         <activity android:name="VoLap.example.appLoship.Model.Loading_activity"/>
         <activity android:name="VoLap.example.appLoship.Model.NullActivity"/>
+
+        <activity android:name="VoLap.example.appLoship.View.Login1_Activity" />
+        <activity android:name="VoLap.example.appLoship.View.Login2_Activity" />
+        <activity android:name="VoLap.example.appLoship.View.Login3_Activity" />
+        <activity android:name="VoLap.example.appLoship.View.DangXuat" />
+        <activity android:name="VoLap.example.appLoship.View.DangXuat2" />
+        <activity android:name="VoLap.example.appLoship.View.NewAccount" />
+
         <activity android:name="VoLap.example.appLoship.View.LoXe_Activity" />
         <activity android:name="VoLap.example.appLoship.View.GuiDo_Activity" />
         <activity android:name="VoLap.example.appLoship.View.MapGiaoDoAn_Activity" />
-        <activity android:name="VoLap.example.appLoship.View.QLHS" />
-        <activity android:name="VoLap.example.appLoship.View.GioHangActivity" />
-        <activity android:name="VoLap.example.appLoship.View.NewAccount" />
-        <activity android:name="VoLap.example.appLoship.View.DangXuat" />
-        <activity android:name="VoLap.example.appLoship.View.DangXuat2" />
-        <activity android:name="VoLap.example.appLoship.View.GiamGia" />
-        <activity android:name="VoLap.example.appLoship.View.DoAn_BanhCanh_activity" />
-        <activity android:name="VoLap.example.appLoship.View.DoAn_BanhMi_Activity" />
-        <activity android:name="VoLap.example.appLoship.View.List_MonAn" />
-        <activity android:name="VoLap.example.appLoship.View.Menu_GiaoDoAn" />
+
+        <activity android:name="VoLap.example.appLoship.View.Home_Activity"/>
         <activity android:name="VoLap.example.appLoship.View.ProfileUserActivity" />
         <activity android:name="VoLap.example.appLoship.View.ThongBaoActivity" />
-        <activity android:name="VoLap.example.appLoship.View.Login1_Activity" />
+        <activity android:name="VoLap.example.appLoship.View.QLHS" />
+
+        <activity android:name="VoLap.example.appLoship.View.GioHangActivity" />
+        <activity android:name="VoLap.example.appLoship.View.GiamGia" />
+        <activity android:name="VoLap.example.appLoship.View.List_MonAn" />
+        <activity android:name="VoLap.example.appLoship.View.Menu_GiaoDoAn" />
+
+
+        <activity android:name="VoLap.example.appLoship.View.DoAn_BanhCanh_activity" />
+        <activity android:name="VoLap.example.appLoship.View.DoAn_BanhMi_Activity" />
+
         <activity android:name="VoLap.example.appLoship.View.GiaoDoAn_activity" />
-        <activity android:name="VoLap.example.appLoship.View.Login2_Activity" />
-        <activity android:name="VoLap.example.appLoship.View.Home_Activity"/>
         <activity android:name="VoLap.example.appLoship.View.DonHang_activity"/>
         <activity android:name="VoLap.example.appLoship.View.ChiTietDH_activity"/>
+        <activity android:name="VoLap.example.appLoship.View.NhanHang_activity"/>
 
         <activity android:name="VoLap.example.appLoship.View.MainActivity">
             <intent-filter>
