@@ -9,7 +9,10 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+<<<<<<< HEAD
 import android.widget.TextView;
+=======
+>>>>>>> 29f1e845917dc0bb7b96159e21dad47eb5a81c08
 
 import VoLap.example.appLoship.R;
 import com.google.android.material.textfield.TextInputEditText;
