@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 
 public class List_monan_Adapter extends BaseAdapter {
 

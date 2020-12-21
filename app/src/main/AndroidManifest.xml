@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.circleview">
+    package="VoLap.example.appLoship">
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -10,6 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="VoLap.example.appLoship.View.DangKyActivity"></activity>
+        <activity android:name="VoLap.example.appLoship.View.DangNhapActivity" />
+        <activity android:name="VoLap.example.appLoship.View.SignUp2_Activity" />
+        <activity android:name="VoLap.example.appLoship.View.SingUp_Activity" />
+        <activity android:name="VoLap.example.appLoship.View.TaoMa_Activity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -18,9 +25,8 @@
         <activity
             android:name="VoLap.example.appLoship.View.MapsActivity"
             android:label="@string/title_activity_maps" />
-
-        <activity android:name="VoLap.example.appLoship.Model.Loading_activity"/>
-        <activity android:name="VoLap.example.appLoship.Model.NullActivity"/>
+        <activity android:name="VoLap.example.appLoship.Model.Loading_activity" />
+        <activity android:name="VoLap.example.appLoship.Model.NullActivity" />
         <activity android:name="VoLap.example.appLoship.View.LoXe_Activity" />
         <activity android:name="VoLap.example.appLoship.View.GuiDo_Activity" />
         <activity android:name="VoLap.example.appLoship.View.MapGiaoDoAn_Activity" />
@@ -37,12 +43,12 @@
         <activity android:name="VoLap.example.appLoship.View.ProfileUserActivity" />
         <activity android:name="VoLap.example.appLoship.View.ThongBaoActivity" />
         <activity android:name="VoLap.example.appLoship.View.Login1_Activity" />
-        <activity android:name="VoLap.example.appLoship.View.GiaoDoAn_activity" />
         <activity android:name="VoLap.example.appLoship.View.Login2_Activity" />
-        <activity android:name="VoLap.example.appLoship.View.Home_Activity"/>
-        <activity android:name="VoLap.example.appLoship.View.DonHang_activity"/>
-        <activity android:name="VoLap.example.appLoship.View.ChiTietDH_activity"/>
-
+        <activity android:name="VoLap.example.appLoship.View.GiaoDoAn_activity" />
+        <activity android:name="VoLap.example.appLoship.View.Login3_Activity" />
+        <activity android:name="VoLap.example.appLoship.View.Home_Activity" />
+        <activity android:name="VoLap.example.appLoship.View.DonHang_activity" />
+        <activity android:name="VoLap.example.appLoship.View.ChiTietDH_activity" />
         <activity android:name="VoLap.example.appLoship.View.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,7 +56,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

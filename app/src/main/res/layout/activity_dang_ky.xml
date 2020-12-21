@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:gravity="center"
-            android:text="Nhập số điện thoại của bạn để tiếp tục"
+            android:text="Nhập Email và Passwords để thực hiện đăng ký"
             android:textColor="@android:color/darker_gray"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -52,50 +52,31 @@
             android:layout_width="match_parent"
             android:layout_height="109dp">
 
-            <com.hbb20.CountryCodePicker
-                android:id="@+id/ccp"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:background="@drawable/round_border"
-                android:gravity="center"
-                android:textStyle="bold"
-                app:ccpDialog_textColor="#C1BEBE"
-                app:ccp_defaultLanguage="VIETNAMESE"
-                app:ccp_defaultNameCode="VN"
-                app:ccp_defaultPhoneCode="84"
-                app:ccp_showNameCode="false"
-                app:ccp_textSize="20dp" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_marginTop="7dp"
-                android:id="@+id/R_edt_sdt"
-                android:layout_width="239dp"
-                android:layout_height="89dp"
-                android:layout_gravity="center"
-                app:counterEnabled="true"
-                app:counterMaxLength="10"
-                app:errorEnabled="true"
-                app:hintEnabled="true"
-                >
+            <EditText
+                android:id="@+id/emaildki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/login1_sdt"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:background="@drawable/round_border"
-                    android:gravity="center"
-                    android:inputType="phone"
-                    android:maxLength="10"
-                    android:textColor="@color/colorBlack"
-                    android:textStyle="bold" />
-            </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                android:id="@+id/passdki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
         </GridLayout>
 
 
         <Button
-            android:id="@+id/bt_dkitieptuc"
+            android:id="@+id/btnDangKy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -104,6 +85,8 @@
             android:text="Tiếp tục"
             android:textColor="#fff"
             android:textSize="20sp" />
+
+
 
         <TextView
             android:layout_width="match_parent"
@@ -131,37 +114,25 @@
             android:autoLink="web"
             android:linksClickable="true" />
 
-        <Button
-            android:id="@+id/bt_facebook"
-            android:layout_width="319dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="18dp"
-            android:background="@color/cardview_light_background"
-            android:drawableStart="@drawable/ic_facebook_link"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:text="Đăng nhập với FACEBOOK"
-            android:textColor="@android:color/holo_blue_dark"
-            android:textSize="15dp"
-            android:textStyle="bold" />
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
 
-        <TextView
-            android:id="@+id/link_signup"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:text="Chưa có tài khoản? Đăng ký ngay"
-            android:textColor="@color/colorBlue"
-            android:textSize="15sp"
-            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@drawable/round_border"
+            android:text="Đăng nhập" />
 
 
     </LinearLayout>
 
 
 </LinearLayout>
-
-

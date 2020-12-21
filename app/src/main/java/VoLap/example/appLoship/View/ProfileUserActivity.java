@@ -2,17 +2,21 @@ package VoLap.example.appLoship.View;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.view.View;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ProfileUserActivity extends AppCompatActivity {
     ImageView img_profile2, nexta, img_goto_QLHS;
+    TextView linkdkdn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,16 @@ public class ProfileUserActivity extends AppCompatActivity {
             }
         });
 
+        linkdkdn=(TextView) findViewById(R.id.linkdndk);
+       linkdkdn.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Log.d("Test","Co click");
+               Intent intent= new Intent(ProfileUserActivity.this, DangNhapActivity.class);
+               startActivity(intent);
+               Log.d("Test","Co chay Intent");
+           }
+       });
 
         nexta= (ImageView)findViewById(R.id.next2);
         nexta.setOnClickListener(new View.OnClickListener() {

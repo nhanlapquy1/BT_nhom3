@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 
 public class NullActivity extends AppCompatActivity {
 

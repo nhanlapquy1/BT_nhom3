@@ -1,31 +1,24 @@
 package VoLap.example.appLoship.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 
 public class Login1_Activity extends AppCompatActivity {
     Button btcontinued;
-
+    TextView linkdangky;
     private EditText Editex_login_sdt;
     private Button buttonCall;
 
@@ -36,7 +29,7 @@ public class Login1_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_login_1);
 
         overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
-        btcontinued=(Button)findViewById(R.id.bt_continued);
+        btcontinued=(Button)findViewById(R.id.bt_dkitieptuc);
         btcontinued.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,6 +37,15 @@ public class Login1_Activity extends AppCompatActivity {
                 startActivity(Dis2);
             }
         });
+
+        /*linkdangky.findViewById(R.id.link_signup);
+        linkdangky.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it2 =new Intent(Login1_Activity.this, SingUp_Activity.class);
+                startActivity(it2);
+            }
+        }); */
 
         final TextInputEditText editText = findViewById(R.id.login1_sdt);
         final TextInputLayout usernameWrapper = findViewById(R.id.R_edt_sdt);

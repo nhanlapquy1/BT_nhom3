@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "350513158188",
+    "project_id": "loship-ae712",
+    "storage_bucket": "loship-ae712.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350513158188:android:018adfa5c20bd364b35989",
+        "android_client_info": {
+          "package_name": "VoLap.example.appLoship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350513158188-otjrljft14ackpq4qf9o798b7euv2vcs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "VoLap.example.appLoship",
+            "certificate_hash": "e76eb4470c5bb5c4895194e817e8b862495a2c06"
+          }
+        },
+        {
+          "client_id": "350513158188-0o1dtbcrdp3qlko3bu6mse1ijujo2hsp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6CDvYJhBiMxn1ugd4pULuK4ES6WFnzv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350513158188-0o1dtbcrdp3qlko3bu6mse1ijujo2hsp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
