@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 
 public class MainActivity extends AppCompatActivity {
     Button btnext;
@@ -19,20 +19,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new Handler().postDelayed(new Runnable() {
+        /*new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(MainActivity.this, Login1_Activity.class);
                 startActivity(intent);
             }
-        }, SPLASH_SCREEN);
+        }, SPLASH_SCREEN); */
 
         overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
         btnext=(Button)findViewById(R.id.bt_next);
         btnext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Dis2=new Intent(MainActivity.this, Login1_Activity.class);
+                Intent Dis2=new Intent(MainActivity.this, Home_Activity.class);
                 startActivity(Dis2);
             }
         });

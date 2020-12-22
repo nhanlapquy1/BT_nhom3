@@ -18,7 +18,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ThongBaoActivity extends AppCompatActivity {

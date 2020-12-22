@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 
 public class DangXuat extends AppCompatActivity {
     ImageView img_thongbao3,img_dangNhap;
