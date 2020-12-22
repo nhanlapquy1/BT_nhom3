@@ -5,7 +5,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 
 public class ChiTietDH_activity   extends AppCompatActivity {
     Button btn_donhang;

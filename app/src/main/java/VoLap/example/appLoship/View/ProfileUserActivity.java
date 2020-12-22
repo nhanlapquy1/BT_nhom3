@@ -2,45 +2,73 @@ package VoLap.example.appLoship.View;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.view.View;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class ProfileUserActivity extends AppCompatActivity {
     ImageView img_profile2, nexta, img_goto_QLHS;
+    TextView linkdkdn,noti;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_user_2);
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        overridePendingTransition(R.anim.trai_sang_phai, R.anim.phai_sang_trai);
 
-        overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
-
-        img_profile2= (ImageView)findViewById(R.id.img_thongbao3);
+        img_profile2 = (ImageView) findViewById(R.id.img_thongbao3);
+        noti = (TextView) findViewById(R.id.noti);
         img_profile2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2= new Intent(ProfileUserActivity.this, DangXuat2.class);
+                Intent intent2 = new Intent(ProfileUserActivity.this, DangXuat2.class);
                 startActivity(intent2);
             }
         });
+        linkdkdn = (TextView) findViewById(R.id.linkdndk);
+        if (currentUser != null){
+            linkdkdn.setText(currentUser.getEmail());
+            noti.setText("Chúc bạn trải nghiệm app \n vui vẻ");
+            }
+        else {
+            linkdkdn.setText("Đăng nhập/Đăng ký");
+            noti.setText("Chào mừng bạn đến với LoShip");
+            linkdkdn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //Log.d("Test","Co click");
+                    Intent intent = new Intent(ProfileUserActivity.this, DangNhapActivity.class);
+                    startActivity(intent);
+                    //Log.d("Test","Co chay Intent");
+                }
+            });
+        }
 
 
-        nexta= (ImageView)findViewById(R.id.next2);
+        nexta = (ImageView) findViewById(R.id.next2);
         nexta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2= new Intent(ProfileUserActivity.this, DangXuat2.class);
+                Intent intent2 = new Intent(ProfileUserActivity.this, DangXuat2.class);
                 startActivity(intent2);
             }
         });
 
-        img_goto_QLHS= (ImageView)findViewById(R.id.img_QLHS1);
+        img_goto_QLHS = (ImageView) findViewById(R.id.img_QLHS1);
         img_goto_QLHS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

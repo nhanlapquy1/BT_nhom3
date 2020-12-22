@@ -7,7 +7,9 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import com.google.firebase.auth.FirebaseAuth;
+
+import VoLap.example.appLoship.R;
 
 public class DangXuat2 extends AppCompatActivity {
 
@@ -31,8 +33,11 @@ public class DangXuat2 extends AppCompatActivity {
         img_dangNhap2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(DangXuat2.this, Login1_Activity.class);
+                FirebaseAuth auth=FirebaseAuth.getInstance();
+                auth.signOut();
+                Intent intent2 = new Intent(DangXuat2.this, Home_Activity.class);
                 startActivity(intent2);
+
             }
         });
     }
