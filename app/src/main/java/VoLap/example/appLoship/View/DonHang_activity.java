@@ -38,8 +38,8 @@ public class DonHang_activity  extends AppCompatActivity {
 
     Button btn_donhang;
     TextView DH_xct;
-    ImageView img_play_nhac;
-ArrayList<Nhac>arrayListNhac;
+    ImageView img_play_nhac,img_nhanhang1;
+    ArrayList<Nhac>arrayListNhac;
     int position = 0;
     MediaPlayer mediaPlayer;
 
@@ -55,6 +55,15 @@ ArrayList<Nhac>arrayListNhac;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DonHang_activity.this, ChiTietDH_activity.class);
+                startActivity(intent);
+            }
+        });
+
+        img_nhanhang1 = (ImageView) findViewById(R.id.img_bg_trang);
+        img_nhanhang1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DonHang_activity.this, NhanHang_activity.class);
                 startActivity(intent);
             }
         });
