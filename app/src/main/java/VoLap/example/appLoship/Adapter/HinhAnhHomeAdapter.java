@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 
 import java.util.List;
 

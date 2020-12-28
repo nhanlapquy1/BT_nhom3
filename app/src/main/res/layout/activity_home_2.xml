@@ -57,7 +57,7 @@
                     app:srcCompat="@drawable/img_empty_favourite" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/txtchaoten"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
@@ -67,7 +67,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/txtngay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"

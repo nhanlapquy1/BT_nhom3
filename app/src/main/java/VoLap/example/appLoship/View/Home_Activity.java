@@ -3,6 +3,7 @@ package VoLap.example.appLoship.View;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,10 +18,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import VoLap.example.appLoship.Adapter.CHGB_Adapter;
@@ -30,25 +40,68 @@ import VoLap.example.appLoship.Adapter.HinhAnhHomeAdapter;
 import VoLap.example.appLoship.Adapter.MonAn_Adapter;
 import VoLap.example.appLoship.Adapter.MonAn_sup;
 
-public class Home_Activity extends AppCompatActivity {
+public class Home_Activity extends AppCompatActivity implements ValueEventListener {
     ViewFlipper viewFlipper1;
     Button bt_menu_all2, bt_cuaHang2;
     ImageView img_doan1,img_doan2;
     GridView gvHinhAnh;
-    TextView txtMaps;
+    TextView txtMaps, txtchaoten, txtngay;
+    FirebaseAuth mAuth;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+
+    public String temp;
+
     private RecyclerView rcv1, rcv2, rcv3,rcv4,rcv5;
     private MonAn_Adapter monAn_adapter;
     private CHGB_Adapter chgb_adapter;
     private Context context, context2, context3,context4,context5;
+
+
+
+    @Override
+    public void onDataChange(@NonNull DataSnapshot snapshot) {
+        temp = snapshot.child("danhmuc1").getValue().toString();
+        //Log.d("kiemtra",temp.toString());
+    }
+
+    @Override
+    public void onCancelled(@NonNull DatabaseError error) {
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_2);
 
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference().child("danhmuc");
+        databaseReference.addValueEventListener(this);
+
+
+
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
         viewFlipper1 = (ViewFlipper) findViewById(R.id.viewFlipper1);
         viewFlipper1.setFlipInterval(2000);
         viewFlipper1.setAutoStart(true);
 
+        txtchaoten = (TextView) findViewById(R.id.txtchaoten);
+        txtngay = (TextView) findViewById(R.id.txtngay);
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM");
+
+        String giohientai = dateFormat.format(calendar.getTime());
+        //Log.d("kiemtra", giohientai + "");
+        txtngay.setText("Ngày: " +giohientai + "");
+
+        if (currentUser != null){
+            txtchaoten.setText("Chào buổi sáng " + currentUser.getEmail());
+        }
+        else {
+            txtchaoten.setText("Chào bạn buổi sáng");
+        }
 
         bt_cuaHang2=(Button)findViewById(R.id.btn_home_cua_hang2);
         bt_cuaHang2.setOnClickListener(new View.OnClickListener() {
@@ -58,9 +111,6 @@ public class Home_Activity extends AppCompatActivity {
                 startActivity(Dis3);
             }
         });
-
-
-
 
 
         BottomNavigationView btnview;
@@ -117,7 +167,6 @@ public class Home_Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
 
 

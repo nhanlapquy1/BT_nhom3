@@ -9,7 +9,7 @@ import android.widget.ListAdapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 
 import java.util.ArrayList;
 
@@ -45,12 +45,12 @@ public class  GiamGia extends AppCompatActivity {
         gridView =(GridView) findViewById(R.id.gv3);
         arrayList=new ArrayList<>();
 
-        arrayList.add(new List_monan_Sup("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_12));
+        arrayList.add(new List_monan_Sup("Milk Tea"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_12));
         arrayList.add(new List_monan_Sup("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_11));
-        arrayList.add(new List_monan_Sup("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_7));
-        arrayList.add(new List_monan_Sup("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_8));
-        arrayList.add(new List_monan_Sup("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_10));
-        arrayList.add(new List_monan_Sup("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_15));
+        arrayList.add(new List_monan_Sup("Milk Tea"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_7));
+        arrayList.add(new List_monan_Sup("Milk Tea"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_8));
+        arrayList.add(new List_monan_Sup("Cà phê"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_10));
+        arrayList.add(new List_monan_Sup("Bạc xỉu"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_15));
         arrayList.add(new List_monan_Sup("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_15));
         arrayList.add(new List_monan_Sup("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_15));
         arrayList.add(new List_monan_Sup("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.mk_15));

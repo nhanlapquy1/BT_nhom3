@@ -440,12 +440,12 @@
 
                 <TextView
                     android:id="@+id/CTDH_tong2"
-                    android:layout_width="55dp"
+                    android:layout_width="105dp"
                     android:layout_height="30dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="337dp"
+                    android:layout_marginStart="288dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="18dp"
                     android:text="39.000"

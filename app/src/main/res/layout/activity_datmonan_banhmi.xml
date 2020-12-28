@@ -209,9 +209,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:id="@+id/dat_ngay"
-                        android:layout_width="79dp"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
@@ -219,16 +220,16 @@
                         android:text="39k"
                         android:textColor="@android:color/holo_red_dark"
                         android:textSize="30sp"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
+
                     <Button
                         android:id="@+id/btn_bm_DatNgay"
-                        android:layout_width="160dp"
+                        android:layout_width="100dp"
                         android:layout_height="33dp"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="150dp"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/dat_ngay"
-                        android:layout_gravity="center"
                         android:gravity="center"
                         android:text="Đặt ngay"
                         android:textColor="#FFFFFF"
