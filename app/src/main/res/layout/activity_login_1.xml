@@ -95,7 +95,7 @@
 
 
         <Button
-            android:id="@+id/bt_continued"
+            android:id="@+id/bt_dkitieptuc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -148,12 +148,12 @@
 
         <TextView
             android:id="@+id/link_signup"
-            android:layout_width="211dp"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="Điều khoản và sử dụng?"
+            android:text="Chưa có tài khoản? Đăng ký ngay"
             android:textColor="@color/colorBlue"
             android:textSize="15sp"
             android:textStyle="italic" />
