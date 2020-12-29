@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +51,7 @@ public class List_MonAn extends AppCompatActivity {
         arrayList.add(new List_monan_Sup("Bánh mì"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
         arrayList.add(new List_monan_Sup("Bún đậu Haki"," 6.2km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
         arrayList.add(new List_monan_Sup("Bún đậu MIN"," 6.3km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
-        arrayList.add(new List_monan_Sup("Milk"," 6.4km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
+        arrayList.add(new List_monan_Sup("Milk Tea"," 6.4km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
         arrayList.add(new List_monan_Sup("Milk"," 6.5km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
         arrayList.add(new List_monan_Sup("Milk"," 2.2km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));
         arrayList.add(new List_monan_Sup("Milk"," 6.1km","Đối tác Loship","Freeship","60%",R.drawable.quan_moi1));

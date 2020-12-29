@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 
 public class QLHS  extends AppCompatActivity {
     ImageView img_thongbao4;

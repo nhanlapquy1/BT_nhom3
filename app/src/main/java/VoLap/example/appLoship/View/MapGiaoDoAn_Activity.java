@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 
 public class MapGiaoDoAn_Activity extends AppCompatActivity {
 

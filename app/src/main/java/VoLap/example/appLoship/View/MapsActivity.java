@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.FragmentActivity;
 
-import com.example.circleview.R;
+import VoLap.example.appLoship.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

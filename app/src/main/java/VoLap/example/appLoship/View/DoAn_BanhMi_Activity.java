@@ -7,10 +7,18 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
+import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.circleview.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import VoLap.example.appLoship.R;
 
 import java.util.ArrayList;
 
@@ -19,17 +27,25 @@ import VoLap.example.appLoship.Adapter.DatMonAn_Sup;
 import VoLap.example.appLoship.Adapter.List_monan_Adapter;
 import VoLap.example.appLoship.Adapter.List_monan_Sup;
 
-public class DoAn_BanhMi_Activity extends AppCompatActivity{
+public class DoAn_BanhMi_Activity extends AppCompatActivity implements ValueEventListener {
     ImageView image_back_giaodoan3, image_giohang;
     Button btDatNgay;
     GridView gridView_dma;
     ArrayList<DatMonAn_Sup> arrayList;
     DatMonAn_Adapter adapter;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+    TextView txtgia;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_datmonan_banhmi);
+
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference().child("gia");
+        databaseReference.addValueEventListener(this);
+        txtgia = (TextView) findViewById(R.id.dat_ngay);
 
         overridePendingTransition(R.anim.trai_sang_phai,R.anim.phai_sang_trai);
 
@@ -71,6 +87,16 @@ public class DoAn_BanhMi_Activity extends AppCompatActivity{
 
         adapter =new DatMonAn_Adapter(this,R.layout.activity_sup_datmonan,arrayList);
         gridView_dma.setAdapter((ListAdapter) adapter);
+    }
+
+    @Override
+    public void onDataChange(@NonNull DataSnapshot snapshot) {
+        txtgia.setText(snapshot.child("banhmy").getValue().toString());
+    }
+
+    @Override
+    public void onCancelled(@NonNull DatabaseError error) {
+
     }
 }
 

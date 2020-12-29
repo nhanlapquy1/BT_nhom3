@@ -17,27 +17,38 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-import com.example.circleview.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import VoLap.example.appLoship.R;
 
 import java.util.ArrayList;
 
 import VoLap.example.appLoship.Adapter.Nhac;
 
-public class DonHang_activity  extends AppCompatActivity {
+public class DonHang_activity  extends AppCompatActivity implements ValueEventListener {
 
     private static final int MY_PERMISSION_REQUEST_CODE_CALL_PHONE = 555;
+    public static final String KEY_TO_MAIN = "KEY_TO_MAIN";
 
     private static final String LOG_TAG = "AndroidExample";
 
     private EditText Editex_login_sdt;
     private Button buttonCall;
 
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+
 
     Button btn_donhang;
-    TextView DH_xct;
+    TextView DH_xct, txtgia;
     ImageView img_play_nhac;
 ArrayList<Nhac>arrayListNhac;
     int position = 0;
@@ -48,13 +59,22 @@ ArrayList<Nhac>arrayListNhac;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donhang1);
 
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference().child("gia");
+        databaseReference.addValueEventListener(this);
+
         overridePendingTransition(R.anim.trai_sang_phai, R.anim.phai_sang_trai);
+
+        txtgia = (TextView) findViewById(R.id.dh_tong);
+        txtgia.setText(getIntent().getStringExtra(GioHangActivity.KEY_TO_MAIN));
 
         DH_xct = (TextView) findViewById(R.id.DH_xemchitiet);
         DH_xct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String tong = txtgia.getText().toString();
                 Intent intent = new Intent(DonHang_activity.this, ChiTietDH_activity.class);
+                intent.putExtra(KEY_TO_MAIN,tong);
                 startActivity(intent);
             }
         });
@@ -189,6 +209,15 @@ ArrayList<Nhac>arrayListNhac;
     }
 
 
+    @Override
+    public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+    }
+
+    @Override
+    public void onCancelled(@NonNull DatabaseError error) {
+
+    }
 }
 
 
